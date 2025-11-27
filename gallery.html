@@ -25,7 +25,8 @@
     <!-- PNG fallbacks (Safari, iOS, older browsers) -->
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/samba-fav-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/fav/samba-fav-16x16.png">
-
+    <!-- ICO fallback (legacy browsers) -->
+    <link rel="shortcut icon" href="images/fav/samba-fav-32x32.ico">
     <!-- Apple iOS icon (MUST be PNG — use 192x192 or 180x180) -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/samba-fav-192x192.png">
     <!-- Android/Chrome icons via manifest -->
@@ -440,61 +441,62 @@
                     </div>
             </section>
             
-    <!-- Gallery Controls -->
-    <div id="gallery-start" class="sticky top-20 z-50 flex justify-center pointer-events-none px-4 mt-12 mb-4 -mt-10">
-        <nav class="pointer-events-auto bg-white/80 backdrop-blur-xl border border-white/40 shadow-xl shadow-stone-900/5 rounded-full px-2 py-1.5 flex items-center gap-1 transition-all hover:bg-white">
-            
-            <button onclick="filterGallery('all')" 
-                    class="filter-btn active px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-900 bg-stone-100" 
-                    data-category="all">
-                All
-            </button>
-
-            <!-- Group: Courses -->
-            <div class="relative group">
-                <button onclick="filterGallery('courses')" 
-                        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900 flex items-center gap-1.5" 
-                        data-category="courses">
-                    Courses <i data-lucide="chevron-down" class="w-3 h-3 opacity-40"></i>
-                </button>
-                
-                <!-- Dropdown -->
-                <div class="dropdown-content absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48">
-                    <div class="bg-white rounded-2xl shadow-xl shadow-stone-900/10 border border-stone-100 overflow-hidden p-1">
-                        <a href="#" onclick="filterGallery('courses', 'open-group'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Open Group</a>
-                        <a href="#" onclick="filterGallery('courses', 'private-coaching'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Private Coaching</a>
-                        <a href="#" onclick="filterGallery('courses', 'private-group'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Family Sessions</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Group: Activities -->
-            <div class="relative group">
-                <button onclick="filterGallery('activities')" 
-                        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900 flex items-center gap-1.5" 
-                        data-category="activities">
-                    Explore <i data-lucide="chevron-down" class="w-3 h-3 opacity-40"></i>
-                </button>
-                
-                <div class="dropdown-content absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48">
-                    <div class="bg-white rounded-2xl shadow-xl shadow-stone-900/10 border border-stone-100 overflow-hidden p-1">
-                        <a href="#" onclick="filterGallery('activities', 'paradise-valley'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Paradise Valley</a>
-                        <a href="#" onclick="filterGallery('activities', 'sand-dunes'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Sand Dunes</a>
-                        <a href="#" onclick="filterGallery('activities', 'surf-skate'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Surf Skate</a>
-                    </div>
-                </div>
-            </div>
-
-            <button onclick="filterGallery('shop')" 
-                    class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900" 
-                    data-category="shop">
-                Shop
-            </button>
-        </nav>
-    </div>
-
-    <!-- Gallery Grid -->
+    <!-- Gallery Grid Area (Now contains the Sticky Nav to constrain it) -->
     <main class="min-h-screen px-4 md:px-6 container mx-auto">
+        
+        <!-- Gallery Controls (Moved inside Main to prevent overlapping footer) -->
+        <div id="gallery-start" class="sticky top-20 z-50 flex justify-center pointer-events-none px-4 mt-12 mb-4 -mt-10">
+            <nav class="pointer-events-auto bg-white/80 backdrop-blur-xl border border-white/40 shadow-xl shadow-stone-900/5 rounded-full px-2 py-1.5 flex items-center gap-1 transition-all hover:bg-white">
+                
+                <button onclick="filterGallery('all')" 
+                        class="filter-btn active px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-900 bg-stone-100" 
+                        data-category="all">
+                    All
+                </button>
+
+                <!-- Group: Courses -->
+                <div class="relative group">
+                    <button onclick="filterGallery('courses')" 
+                            class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900 flex items-center gap-1.5" 
+                            data-category="courses">
+                        Courses <i data-lucide="chevron-down" class="w-3 h-3 opacity-40"></i>
+                    </button>
+                    
+                    <!-- Dropdown -->
+                    <div class="dropdown-content absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48">
+                        <div class="bg-white rounded-2xl shadow-xl shadow-stone-900/10 border border-stone-100 overflow-hidden p-1">
+                            <a href="#" onclick="filterGallery('courses', 'open-group'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Open Group</a>
+                            <a href="#" onclick="filterGallery('courses', 'private-coaching'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Private Coaching</a>
+                            <a href="#" onclick="filterGallery('courses', 'private-group'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Family Sessions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Group: Activities -->
+                <div class="relative group">
+                    <button onclick="filterGallery('activities')" 
+                            class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900 flex items-center gap-1.5" 
+                            data-category="activities">
+                        Explore <i data-lucide="chevron-down" class="w-3 h-3 opacity-40"></i>
+                    </button>
+                    
+                    <div class="dropdown-content absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48">
+                        <div class="bg-white rounded-2xl shadow-xl shadow-stone-900/10 border border-stone-100 overflow-hidden p-1">
+                            <a href="#" onclick="filterGallery('activities', 'paradise-valley'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Paradise Valley</a>
+                            <a href="#" onclick="filterGallery('activities', 'sand-dunes'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Sand Dunes</a>
+                            <a href="#" onclick="filterGallery('activities', 'surf-skate'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Surf Skate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="filterGallery('shop')" 
+                        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900" 
+                        data-category="shop">
+                    Shop
+                </button>
+            </nav>
+        </div>
+
         <!-- Info Bar -->
         <div class="flex justify-between items-end mb-8 px-2 border-b border-stone-200 pb-4">
             <h2 id="active-category-display" class="text-3xl font-serif text-stone-800">All Collection</h2>
@@ -537,11 +539,13 @@
             <i data-lucide="x" class="w-8 h-8"></i>
         </button>
 
-        <button onclick="navigateLightbox(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 z-[110] text-white/50 hover:text-white hover:bg-white/10 p-3 rounded-full transition-all hidden md:block group">
+        <!-- Previous Button (Visible on Mobile now with background) -->
+        <button onclick="navigateLightbox(-1)" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-[110] text-white/70 hover:text-white bg-black/20 hover:bg-white/10 p-2 md:p-3 rounded-full transition-all group">
             <i data-lucide="chevron-left" class="w-8 h-8 group-hover:-translate-x-1 transition-transform"></i>
         </button>
         
-        <button onclick="navigateLightbox(1)" class="absolute right-4 top-1/2 -translate-y-1/2 z-[110] text-white/50 hover:text-white hover:bg-white/10 p-3 rounded-full transition-all hidden md:block group">
+        <!-- Next Button (Visible on Mobile now with background) -->
+        <button onclick="navigateLightbox(1)" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-[110] text-white/70 hover:text-white bg-black/20 hover:bg-white/10 p-2 md:p-3 rounded-full transition-all group">
             <i data-lucide="chevron-right" class="w-8 h-8 group-hover:translate-x-1 transition-transform"></i>
         </button>
 
@@ -992,35 +996,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        document.querySelector('.wa__btn_popup').addEventListener('click', function() {
-            const chatBox = document.querySelector('.wa__popup_chat_box');
-            const btn = this;
-            
-            if (chatBox.classList.contains('wa__active')) {
-                // Close Animation
-                chatBox.classList.remove('wa__active');
-                btn.classList.remove('wa__active');
-                
-                // Reset pending states after animation
-                setTimeout(() => {
-                    chatBox.classList.remove('wa__pending');
-                    chatBox.classList.remove('wa__lauch');
-                }, 400);
-            } else {
-                // Open Animation
-                chatBox.classList.add('wa__pending');
-                chatBox.classList.add('wa__active');
-                btn.classList.add('wa__active');
-                
-                // Launch inner items slightly after box opens
-                setTimeout(() => {
-                    chatBox.classList.add('wa__lauch');
-                }, 100);
-            }
-        });
-    </script>
 
 <script src="js/animation.js"></script>
 </body>
