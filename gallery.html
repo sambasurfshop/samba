@@ -1,0 +1,1027 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Art Studio | Modern Surf School &amp; Shop</title>
+    <meta name="description" content="Experience the perfect blend of surf culture and modern art. Professional surf lessons, eco-friendly boards, and artistic surf lifestyle.">
+    <meta name="author" content="Surf Art Studio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="1376c29e-3689-4abc-985b-27e14520cb2b">
+    <meta property="og:description" content="Lovable Generated Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c2027340-ce08-43ec-9d40-d1e1bf079252/id-preview-18a12289--1376c29e-3689-4abc-985b-27e14520cb2b.lovable.app-1762251681019.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c2027340-ce08-43ec-9d40-d1e1bf079252/id-preview-18a12289--1376c29e-3689-4abc-985b-27e14520cb2b.lovable.app-1762251681019.png">
+    <script type="module" crossorigin="" src="assets/index-CjLpWPs2.js"></script>
+
+            <!-- favicons-->
+
+    <!-- Modern SVG favicon (used by Chrome, Brave, Firefox, Edge) -->
+    <link rel="icon" type="image/svg+xml" href="images/fav/samba-fav-32x32.svg">
+    <!-- PNG fallbacks (Safari, iOS, older browsers) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/samba-fav-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/samba-fav-16x16.png">
+
+    <!-- Apple iOS icon (MUST be PNG — use 192x192 or 180x180) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/samba-fav-192x192.png">
+    <!-- Android/Chrome icons via manifest -->
+    <link rel="manifest" href="images/fav/site.webmanifest">
+    
+
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" crossorigin="" href="css/style.css">
+
+
+    <style>
+        /* Optimization: Disable noise filter on low-power devices if possible, 
+           or just keep it simple. If it's too heavy, comment out the ::before block */
+        .bg-grain {
+            position: relative;
+        }
+        .bg-grain::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* Hover Card Effects */
+        .card-info {
+            transform: translateY(100%);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .group:hover .card-info {
+            transform: translateY(0);
+        }
+        
+        /* Dropdown Animation */
+        .dropdown-content {
+            transform-origin: top center;
+            transition: all 0.2s ease-in-out;
+            opacity: 0;
+            transform: scale(0.95) translateY(-10px) translateX(-50%);
+            pointer-events: none;
+            visibility: hidden;
+        }
+        
+        .group:hover .dropdown-content {
+            opacity: 1;
+            transform: scale(1) translateY(0) translateX(-50%);
+            pointer-events: auto;
+            visibility: visible;
+        }
+
+        ::selection {
+            background-color: #0ea5e9;
+            color: white;
+        }
+
+        /* Performance Optimization Class */
+        .gpu-accelerated {
+            will-change: transform;
+            transform: translateZ(0);
+        }
+    </style>
+  
+
+</head>
+
+<body>
+    <div id="root">
+        <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+            <ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+        </div>
+        <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+        <div class="min-h-screen">
+            <!-- 
+      ============================================================
+      NAVBAR
+      ============================================================
+    -->
+    <!--
+      ============================================================
+      HEADER - TOP (TRANSPARENT)
+      ============================================================
+    -->
+            <header id="header-top" class="absolute top-0 left-0 right-0 z-40 text-white w-full">
+                <div class="flex justify-between items-center h-24 px-6 lg:px-10 max-w-7xl mx-auto">
+
+                    <!-- ======== LEFT: LOGO & PHONE ======== -->
+                    <div class="flex items-center gap-6">
+                        <!-- Logo -->
+                        <a href="index.html" class="flex items-center">
+                            <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain">
+                        </a>
+
+                        <!-- Phone Number -->
+                        <div class="hidden lg:block ml-4 border-l border-white/30 pl-6">
+                            <span class="text-xs opacity-80">Call Us 24/7</span>
+                            <p class="text-l font-semibold text-[#bf5300]/80">
+                                +212 689 885 266
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ======== CENTER: NAVIGATION ======== -->
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <a href="index.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Home</a>
+                        <a href="about.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">About Us</a>
+
+                        <!-- == Services Dropdown == -->
+                        <div class="group">
+                            <button class="flex items-center gap-1 text-sm font-medium hover:text-[#bf5300]">
+                                <a href="services.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Services</a>
+                                <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-panel absolute top-full left-0 right-0 
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transform translate-y-2 group-hover:translate-y-0">
+                                <div class="bg-white text-gray-800 shadow-2xl surf-shape">
+                                    <div class="flex p-8 max-w-7xl mx-auto">
+                                        <div class="w-1/3 flex-shrink-0 pr-8">
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Services</h3>
+                                            <p class="text-sm text-gray-600">Catch the waves with us! From beginner lessons to private coaching and guided surf adventures, we have the perfect session for everyone.</p>
+                                        </div>
+                                        <div class="w-1/3 px-8 border-l border-r border-gray-200 flex items-center"> 
+                                            <nav class="flex flex-col gap-2">
+                                                <a href="courses/open-group-session.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Open Group Session</a>
+                                                <a href="courses/private-surf-coaching.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Private Surf Coaching</a>
+                                                <a href="courses/private-group-surf.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Private Group Surf</a>
+                                            </nav>
+                                        </div>
+                                        <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
+                                            <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
+                                            <a href="services.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                                Show All Services
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- == activities Dropdown == -->
+                        <div class="group">
+                            <button class="flex items-center gap-1 text-sm font-medium hover:text-[#bf5300]">
+                                <a href="activities.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Activities</a>
+                                <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-panel absolute top-full left-0 right-0
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transform translate-y-2 group-hover:translate-y-0">
+                                <div class="bg-white text-gray-800 shadow-2xl surf-shape">
+                                    <div class="flex p-8 max-w-7xl mx-auto">
+                                        <div class="w-1/3 flex-shrink-0 pr-8">
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Activities</h3>
+                                            <p class="text-sm text-gray-600">From epic surf sessions to trips in Paradise Valley, dune adventures, and surf-skate fun — we bring unforgettable experiences to every day.</p>
+                                        </div>
+                                        <div class="w-1/3 px-8 border-l border-r border-gray-200 flex items-center">
+                                            <nav class="flex flex-col gap-2">
+                                                <a href="activities/paradise-valley.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">paradise valley</a>
+                                                <a href="activities/sand-dunes.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">sand dunes</a>
+                                                <a href="activities/surf-skate.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">surf skate</a>
+                                            </nav>
+                                        </div>
+                                        <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
+                                            <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
+                                            <a href="activities.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                                Show All Activities
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="gallery.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Gallery</a>
+                        <a href="contact.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Contact</a>
+                    </nav>
+
+                    <!-- ======== RIGHT: CTA & MOBILE TOGGLE ======== -->
+                    <div class="flex items-center gap-4">
+                        <a href="contact.html" class="hidden md:block text-sm font-semibold rounded-full px-5 py-2.5
+                            bg-white text-[#bf5300]
+                            hover:bg-gray-200 hover:text-[#a64900] transition-colors">
+                            Book now
+                        </a>
+
+                        <button class="mobile-menu-toggle lg:hidden p-2 rounded-md z-50 text-white">
+                            <svg class="menu-icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                            <svg class="menu-icon-close w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!--
+      ============================================================
+      HEADER - STICKY (GLASSY ORANGE)
+      ============================================================
+    -->
+            <header id="header-sticky" class="fixed top-0 left-0 right-0 z-50 text-white w-full
+                             bg-[#bf5300]/90 backdrop-blur-md shadow-lg
+                             -translate-y-full invisible">
+                <div class="flex justify-between items-center h-[4.5rem] px-6 lg:px-10 max-w-7xl mx-auto">
+                    <!-- ======== LEFT: LOGO & PHONE ======== -->
+                    <div class="flex items-center gap-6">
+                        <a href="index.html" class="text-2xl font-bold tracking-tight">
+                            <img src="images/samba-logo-white.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain">
+                        </a>
+                        <div class="hidden lg:block ml-4 border-l border-white/30 pl-6">
+                            <span class="text-xs opacity-80">Call Us 24/7</span>
+                            <p class="text-l font-semibold text-white">
+                                +212 689 885 266
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ======== CENTER: NAVIGATION ======== -->
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <a href="index.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Home</a>
+                        <a href="about.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">About Us</a>
+
+                        <!-- == Services Dropdown == -->
+                        <div class="group">
+                            <button class="flex items-center gap-1 text-sm font-medium hover:text-gray-200">
+                                <a href="services.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Services</a>
+                                <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-panel absolute top-full left-0 right-0
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transform translate-y-2 group-hover:translate-y-0">
+                                <div class="bg-white text-gray-800 shadow-2xl surf-shape">
+                                    <div class="flex p-8 max-w-7xl mx-auto">
+                                        <div class="w-1/3 flex-shrink-0 pr-8">
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Services</h3>
+                                            <p class="text-sm text-gray-600">Catch the waves with us! From beginner lessons to private coaching and guided surf adventures, we have the perfect session for everyone.</p>
+                                        </div>
+                                        <div class="w-1/3 px-8 border-l border-r border-gray-200 flex items-center">
+                                            <nav class="flex flex-col gap-2">
+                                                <a href="courses/open-group-session.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Open Group Session</a>
+                                                <a href="courses/private-surf-coaching.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Private Surf Coaching</a>
+                                                <a href="courses/private-group-surf.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Private Group Surf</a>
+                                            </nav>
+                                        </div>
+                                        <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
+                                            <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
+                                            <a href="services.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                                Show All Services
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- == activities Dropdown == -->
+                        <div class="group">
+                            <button class="flex items-center gap-1 text-sm font-medium hover:text-gray-200">
+                                <a href="activities.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Activities</a>
+                                <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="dropdown-panel absolute top-full left-0 right-0
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transform translate-y-2 group-hover:translate-y-0">
+                                <div class="bg-white text-gray-800 shadow-2xl surf-shape">
+                                    <div class="flex p-8 max-w-7xl mx-auto">
+                                        <div class="w-1/3 flex-shrink-0 pr-8">
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Activities</h3>
+                                            <p class="text-sm text-gray-600">From epic surf sessions to trips in Paradise Valley, dune adventures, and surf-skate fun — we bring unforgettable experiences to every day.</p>
+                                        </div>
+                                        <div class="w-1/3 px-8 border-l border-r border-gray-200 flex items-center">
+                                            <nav class="flex flex-col gap-2">
+                                                <a href="activities/paradise-valley.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">paradise valley</a>
+                                                <a href="activities/sand-dunes.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">sand dunes</a>
+                                                <a href="activities/surf-skate.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">surf skate</a>
+                                            </nav>
+                                        </div>
+                                        <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
+                                            <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
+                                            <a href="activities.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                                Show All Activities
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="gallery.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Gallery</a>
+                        <a href="contact.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Contact</a>
+                    </nav>
+
+                    <!-- ======== RIGHT: CTA & MOBILE TOGGLE ======== -->
+                    <div class="flex items-center gap-4">
+                        <a href="contact.html" class="hidden md:block text-sm font-semibold rounded-full px-5 py-2.5
+                            bg-white text-[#bf5300]
+                            hover:bg-gray-200 transition-colors">
+                            Book now
+                        </a>
+
+                        <button class="mobile-menu-toggle lg:hidden p-2 rounded-md z-50 text-white">
+                            <svg class="menu-icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                            <svg class="menu-icon-close w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- MOBILE MENU (FULL SCREEN) -->
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-gray-900/95 backdrop-blur-lg
+                flex flex-col items-center justify-start gap-8 pt-24 px-6
+                opacity-0 invisible transition-all duration-300 lg:hidden z-[60]">
+
+                <button class="mobile-menu-toggle absolute top-6 right-6 p-2 rounded-md z-50 text-white">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+                <a href="index.html" class="mobile-menu-link text-2xl font-bold text-white mb-12">
+                    <img src="images/samba-logo-white.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain">
+                </a>
+
+                <a href="index.html" class="mobile-menu-link text-white text-2xl font-semibold">Home</a>
+                <a href="about.html" class="mobile-menu-link text-white text-2xl font-semibold">About Us</a>
+
+                <!-- Mobile Services Dropdown -->
+                <div class="text-center">
+                    <button class="mobile-dropdown-toggle text-white text-2xl font-semibold flex items-center gap-2">
+                        <a href="services.html" class="mobile-menu-link text-white text-2xl font-semibold">Services</a>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-content hidden mt-4 space-y-3">
+                        <a href="courses/open-group-session.html" class="mobile-menu-link block text-gray-400 text-lg">Open Group Session</a>
+                        <a href="courses/private-surf-coaching.html" class="mobile-menu-link block text-gray-400 text-lg">Private Surf Coaching</a>
+                        <a href="courses/private-group-surf.html" class="mobile-menu-link block text-gray-400 text-lg">Private Group Surf</a>
+                    </div>
+                </div>
+
+                <!-- Mobile activities Dropdown -->
+                <div class="text-center">
+                    <button class="mobile-dropdown-toggle text-white text-2xl font-semibold flex items-center gap-2">
+                        <a href="activities.html" class="mobile-menu-link text-white text-2xl font-semibold">Activities</a>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-content hidden mt-4 space-y-3">
+                        <a href="activities/paradise-valley.html" class="mobile-menu-link block text-gray-400 text-lg">paradise valley</a>
+                        <a href="activities/sand-dunes.html" class="mobile-menu-link block text-gray-400 text-lg">sand dunes</a>
+                        <a href="activities/surf-skate.html" class="mobile-menu-link block text-gray-400 text-lg">surf skate</a>
+                    </div>
+                </div>
+                <a href="gallery.html" class="mobile-menu-link text-white text-2xl font-semibold">Gallery</a>
+                <a href="contact.html" class="mobile-menu-link text-white text-2xl font-semibold">Contact</a>
+
+                <a href="contact.html" class="mobile-menu-link mt-8 text-lg font-semibold rounded-full px-6 py-3 bg-[#bf5300] text-white hover:bg-[#a64900]">
+                    Book now
+                </a>
+            </div>
+
+            <!-- HERO SECTION -->
+            <section id="home" class="relative flex items-center justify-center overflow-hidden min-h-[500px]">
+                    <div class="absolute inset-0 z-0" style="background-image: url(images/hero-surf-BRa6Spgz.jpg); background-size: cover; background-position: center center; background-attachment: fixed;">
+                        <div class="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background/80"></div>
+                    </div>
+                    <div class="relative z-10 container mx-auto px-4 text-center text-white">
+                        <div class="animate-fadeInUp">
+                            <div class="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves w-5 h-5">
+                                    <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                                    <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                                    <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                                </svg><span class="text-sm font-medium">Where Art Meets the Ocean</span></div>
+                            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Gallery <span class="text-primary">Us</span></h1>
+                            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-100">Moments captured from our surf adventures and artistic journey</p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full h-24 md:h-32 shape-hero z-10">
+                        <svg class="w-full h-full" viewBox="0 0 1440 120" preserveAspectRatio="none" fill="currentColor">
+                            <path d="M0,80 C360,130 720,30 1080,80 C1260,105 1350,80 1440,70 L1440,120 L0,120 Z"></path>
+                        </svg>
+                    </div>
+            </section>
+            
+    <!-- Gallery Controls -->
+    <div id="gallery-start" class="sticky top-20 z-50 flex justify-center pointer-events-none px-4 mt-12 mb-4 -mt-10">
+        <nav class="pointer-events-auto bg-white/80 backdrop-blur-xl border border-white/40 shadow-xl shadow-stone-900/5 rounded-full px-2 py-1.5 flex items-center gap-1 transition-all hover:bg-white">
+            
+            <button onclick="filterGallery('all')" 
+                    class="filter-btn active px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-900 bg-stone-100" 
+                    data-category="all">
+                All
+            </button>
+
+            <!-- Group: Courses -->
+            <div class="relative group">
+                <button onclick="filterGallery('courses')" 
+                        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900 flex items-center gap-1.5" 
+                        data-category="courses">
+                    Courses <i data-lucide="chevron-down" class="w-3 h-3 opacity-40"></i>
+                </button>
+                
+                <!-- Dropdown -->
+                <div class="dropdown-content absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48">
+                    <div class="bg-white rounded-2xl shadow-xl shadow-stone-900/10 border border-stone-100 overflow-hidden p-1">
+                        <a href="#" onclick="filterGallery('courses', 'open-group'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Open Group</a>
+                        <a href="#" onclick="filterGallery('courses', 'private-coaching'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Private Coaching</a>
+                        <a href="#" onclick="filterGallery('courses', 'private-group'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Family Sessions</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group: Activities -->
+            <div class="relative group">
+                <button onclick="filterGallery('activities')" 
+                        class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900 flex items-center gap-1.5" 
+                        data-category="activities">
+                    Explore <i data-lucide="chevron-down" class="w-3 h-3 opacity-40"></i>
+                </button>
+                
+                <div class="dropdown-content absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48">
+                    <div class="bg-white rounded-2xl shadow-xl shadow-stone-900/10 border border-stone-100 overflow-hidden p-1">
+                        <a href="#" onclick="filterGallery('activities', 'paradise-valley'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Paradise Valley</a>
+                        <a href="#" onclick="filterGallery('activities', 'sand-dunes'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Sand Dunes</a>
+                        <a href="#" onclick="filterGallery('activities', 'surf-skate'); return false;" class="block px-3 py-2 rounded-xl text-sm text-stone-600 hover:bg-stone-50 transition-colors">Surf Skate</a>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="filterGallery('shop')" 
+                    class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-stone-500 hover:text-stone-900" 
+                    data-category="shop">
+                Shop
+            </button>
+        </nav>
+    </div>
+
+    <!-- Gallery Grid -->
+    <main class="min-h-screen px-4 md:px-6 container mx-auto">
+        <!-- Info Bar -->
+        <div class="flex justify-between items-end mb-8 px-2 border-b border-stone-200 pb-4">
+            <h2 id="active-category-display" class="text-3xl font-serif text-stone-800">All Collection</h2>
+            <div class="text-stone-400 text-sm font-mono" id="count-display">Gallery</div>
+        </div>
+
+        <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] grid-flow-row-dense mb-10 transition-opacity duration-300">
+            <!-- Items injected via JS -->
+        </div>
+
+        <div id="loader" class="hidden py-12 flex justify-center w-full">
+            <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-sky-600"></div>
+        </div>
+
+        <div class="mt-16 text-center pb-20">
+            <button id="load-more-btn" onclick="loadMoreItems()" 
+                    class="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-stone-600 transition duration-300 ease-out border border-stone-200 rounded-full shadow-sm hover:shadow-lg">
+                <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-sky-500 group-hover:translate-x-0 ease">
+                    <i data-lucide="arrow-down" class="w-5 h-5"></i>
+                </span>
+                <span class="absolute flex items-center justify-center w-full h-full text-stone-600 transition-all duration-300 transform group-hover:translate-x-full ease">Load More</span>
+                <span class="relative invisible">Load More</span>
+            </button>
+        </div>
+
+        <div id="empty-state" class="hidden flex flex-col items-center justify-center py-20 text-center">
+            <div class="bg-stone-100 p-6 rounded-full mb-4">
+                <i data-lucide="camera-off" class="w-8 h-8 text-stone-400"></i>
+            </div>
+            <h3 class="text-xl font-serif text-stone-700 mb-2">No masterpieces found</h3>
+            <p class="text-stone-400 max-w-sm mx-auto">Try selecting a different category.</p>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 z-[100] hidden opacity-0 transition-opacity duration-300" aria-modal="true" role="dialog">
+        <div class="absolute inset-0 bg-stone-950/95 backdrop-blur-md" onclick="closeLightbox()"></div>
+        
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 z-[110] text-white/50 hover:text-white transition-colors p-2">
+            <i data-lucide="x" class="w-8 h-8"></i>
+        </button>
+
+        <button onclick="navigateLightbox(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 z-[110] text-white/50 hover:text-white hover:bg-white/10 p-3 rounded-full transition-all hidden md:block group">
+            <i data-lucide="chevron-left" class="w-8 h-8 group-hover:-translate-x-1 transition-transform"></i>
+        </button>
+        
+        <button onclick="navigateLightbox(1)" class="absolute right-4 top-1/2 -translate-y-1/2 z-[110] text-white/50 hover:text-white hover:bg-white/10 p-3 rounded-full transition-all hidden md:block group">
+            <i data-lucide="chevron-right" class="w-8 h-8 group-hover:translate-x-1 transition-transform"></i>
+        </button>
+
+        <div class="relative z-[105] w-full h-full flex flex-col items-center justify-center p-4 md:p-12 pointer-events-none">
+            <div class="pointer-events-auto relative max-w-5xl max-h-[85vh] flex flex-col items-center">
+                
+                <!-- Lightbox Image -->
+                <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl bg-stone-900">
+                
+                <div class="mt-6 text-center animate-fade-in">
+                    <h2 id="lightbox-title" class="text-2xl md:text-3xl font-serif text-white mb-2"></h2>
+                    <div class="flex items-center justify-center gap-3 text-sm tracking-wider uppercase">
+                        <span id="lightbox-category" class="text-sky-400"></span>
+                        <span class="w-1 h-1 bg-white/30 rounded-full"></span>
+                        <span class="text-stone-400">Gallery Us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- CONFIGURATION ---
+        const config = {
+            // PERFORMANCE FIX: Reduced from 36 to 12. 
+            // Loading 36 items with heavy CSS effects causes significant lag on scroll/hover.
+            itemsPerLoad: 12 
+        };
+
+        // --- STATE ---
+        let state = {
+            filter: { category: 'all', sub: null },
+            displayedCount: config.itemsPerLoad,
+            items: [],
+            currentLightboxIndex: 0,
+            renderedItems: 0 // Track actual items in DOM
+        };
+
+        // --- MAPPINGS ---
+        const folderMapping = {
+            'open-group': 'open-group-session',
+            'private-coaching': 'private-surf-coaching',
+            'private-group': 'private-group-surf',
+            'paradise-valley': 'paradise-valley',
+            'sand-dunes': 'sand-dunes',
+            'surf-skate': 'surf-skate',
+            'shop': 'shop'
+        };
+
+        // --- DEFINE IMAGE COUNTS HERE ---
+        const structure = [
+            { 
+                cat: 'courses', 
+                subs: [
+                    { id: 'open-group', count: 24 },       
+                    { id: 'private-coaching', count: 0 }, 
+                    { id: 'private-group', count: 0 }     
+                ] 
+            },
+            { 
+                cat: 'activities', 
+                subs: [
+                    { id: 'paradise-valley', count: 0 },  
+                    { id: 'sand-dunes', count: 18 },       
+                    { id: 'surf-skate', count: 0 }        
+                ] 
+            },
+            { 
+                cat: 'shop', 
+                subs: [
+                    { id: 'shop', count: 31 }              
+                ] 
+            }
+        ];
+
+        const layoutPattern = [
+            'col-span-2 row-span-2', 'col-span-1 row-span-1', 'col-span-1 row-span-1', 
+            'col-span-1 row-span-2', 'col-span-1 row-span-1', 'col-span-2 row-span-1', 
+            'col-span-1 row-span-1', 'col-span-1 row-span-1', 'col-span-2 row-span-1', 
+            'col-span-1 row-span-2', 'col-span-2 row-span-1', 'col-span-1 row-span-1', 
+            'col-span-1 row-span-1'
+        ];
+
+        function initData() {
+            let globalId = 0;
+            state.items = []; 
+
+            structure.forEach(group => {
+                group.subs.forEach(sub => {
+                    const subKey = sub.id;
+                    const count = sub.count;
+                    const folderName = folderMapping[subKey];
+                    const readableTitle = subKey === 'shop' ? 'Shop' : subKey.replace(/-/g, ' ');
+
+                    for (let i = 1; i <= count; i++) {
+                        const spanClass = layoutPattern[(globalId) % layoutPattern.length];
+                        
+                        state.items.push({
+                            id: globalId++,
+                            imgId: i,
+                            title: `${readableTitle} #${i}`,
+                            category: group.cat,
+                            subCategory: subKey,
+                            image: `images/${folderName}/${i}.webp`,
+                            spanClass: spanClass
+                        });
+                    }
+                });
+            });
+        }
+
+        function init() {
+            initData();
+            renderGallery();
+            // Initial scan only
+            if(window.lucide) lucide.createIcons();
+        }
+
+        function filterGallery(category, subCategory = null) {
+            state.filter = { category, sub: subCategory };
+            state.displayedCount = config.itemsPerLoad;
+            state.renderedItems = 0; 
+
+            const loadBtn = document.getElementById('load-more-btn');
+            if(loadBtn) loadBtn.parentElement.classList.remove('hidden');
+
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                const btnCat = btn.getAttribute('data-category');
+                const isActive = btnCat === category;
+                
+                if (isActive) {
+                    btn.classList.add('bg-stone-100', 'text-stone-900', 'active');
+                    btn.classList.remove('text-stone-500');
+                } else {
+                    btn.classList.remove('bg-stone-100', 'text-stone-900', 'active');
+                    btn.classList.add('text-stone-500');
+                }
+            });
+
+            const displayEl = document.getElementById('active-category-display');
+            if (displayEl) {
+                if (subCategory) {
+                    const pretty = subCategory.replace(/-/g, ' '); 
+                    displayEl.innerHTML = `<span class="capitalize">${pretty}</span>`;
+                } else {
+                    displayEl.innerHTML = category === 'all' ? 'All Collection' : `<span class="capitalize">${category}</span>`;
+                }
+            }
+
+            const grid = document.getElementById('gallery-grid');
+            if(grid) {
+                // Smoother opacity transition
+                grid.style.opacity = '0.5';
+                
+                // PERFORMANCE FIX: Reduced timeout to 50ms (was 150ms).
+                // Browsers can handle DOM updates faster than 150ms; this makes it feel snappier.
+                setTimeout(() => {
+                    renderGallery();
+                    grid.style.opacity = '1';
+                }, 50);
+            }
+        }
+
+        function getVisibleItems() {
+            let filtered = state.items.filter(item => {
+                if (state.filter.category === 'all') return true;
+                if (state.filter.sub) {
+                    if (state.filter.category === 'shop') return item.category === 'shop';
+                    return item.category === state.filter.category && item.subCategory === state.filter.sub;
+                }
+                return item.category === state.filter.category;
+            });
+
+            filtered.sort((a, b) => a.imgId - b.imgId);
+            return filtered;
+        }
+
+        function handleImageError(img) {
+            const itemContainer = img.closest('.group');
+            if(itemContainer) {
+                itemContainer.style.display = 'none';
+            }
+        }
+
+        function renderGallery() {
+            const grid = document.getElementById('gallery-grid');
+            const loadBtn = document.getElementById('load-more-btn');
+            const emptyEl = document.getElementById('empty-state');
+            
+            if (!grid) return;
+
+            let filtered = getVisibleItems();
+            const toShow = filtered.slice(0, state.displayedCount);
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                if(emptyEl) emptyEl.classList.remove('hidden');
+                if(loadBtn) loadBtn.parentElement.classList.add('hidden');
+                return;
+            }
+
+            if(emptyEl) emptyEl.classList.add('hidden');
+            
+            // PERFORMANCE FIX: Added 'gpu-accelerated' class which forces hardware acceleration
+            // This prevents the entire page from repainting when you hover over an image.
+            const html = toShow.map((item, idx) => `
+                <div onclick="openLightbox(${item.id})" 
+                     class="group relative cursor-pointer animate-fade-in ${item.spanClass}">
+                     
+                    <div class="relative w-full h-full overflow-hidden rounded-[1rem] bg-stone-200 shadow-sm transition-all duration-500 hover:shadow-2xl">
+                        <img src="${item.image}" 
+                             loading="lazy"
+                             onerror="handleImageError(this)"
+                             alt="${item.title}" 
+                             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 gpu-accelerated">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <div class="absolute top-4 left-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="inline-block px-3 py-1 text-[10px] font-bold tracking-widest text-stone-900 bg-white/90 backdrop-blur-md rounded-full shadow-sm">
+                                #${item.imgId}
+                            </span>
+                        </div>
+
+                        <div class="absolute bottom-0 left-0 w-full p-6 text-white card-info z-10">
+                            <p class="text-sky-400 text-xs font-bold tracking-wider uppercase mb-1">${item.category}</p>
+                            <h3 class="font-serif text-xl leading-tight mb-2 truncate">${item.title}</h3>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            grid.innerHTML = html;
+
+            if (loadBtn) {
+                if (state.displayedCount >= filtered.length) {
+                    loadBtn.parentElement.classList.add('hidden');
+                } else {
+                    loadBtn.parentElement.classList.remove('hidden');
+                }
+            }
+
+            // PERFORMANCE FIX: Only scan the grid for icons, not the whole body
+            if(window.lucide) {
+                lucide.createIcons({
+                    root: grid
+                });
+            }
+        }
+
+        function loadMoreItems() {
+            const loader = document.getElementById('loader');
+            const btn = document.getElementById('load-more-btn');
+            
+            if(btn) btn.parentElement.classList.add('hidden');
+            if(loader) loader.classList.remove('hidden');
+
+            setTimeout(() => {
+                state.displayedCount += config.itemsPerLoad;
+                if(loader) loader.classList.add('hidden');
+                renderGallery();
+            }, 50); // Reduced delay for faster UX
+        }
+
+        // --- LIGHTBOX ---
+        function openLightbox(itemId) {
+            const filtered = getVisibleItems();
+            const index = filtered.findIndex(i => i.id === itemId);
+            
+            if (index !== -1) {
+                state.currentLightboxIndex = index;
+                state.viewingList = filtered;
+                updateLightbox();
+                
+                const lb = document.getElementById('lightbox');
+                if(lb) {
+                    lb.classList.remove('hidden');
+                    void lb.offsetWidth; 
+                    lb.classList.remove('opacity-0');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+        }
+
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            if(lb) {
+                lb.classList.add('opacity-0');
+                setTimeout(() => {
+                    lb.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+        }
+
+        function updateLightbox() {
+            const item = state.viewingList[state.currentLightboxIndex];
+            const img = document.getElementById('lightbox-img');
+            
+            if(img) {
+                img.style.display = 'block';
+                img.src = item.image;
+                img.onerror = function() {
+                    this.style.display = 'none';
+                };
+            }
+
+            const titleEl = document.getElementById('lightbox-title');
+            if(titleEl) titleEl.innerText = item.title;
+            
+            const catEl = document.getElementById('lightbox-category');
+            if(catEl) catEl.innerText = item.subCategory ? item.subCategory.replace(/-/g, ' ') : item.category;
+        }
+
+        function navigateLightbox(dir) {
+            const newIndex = state.currentLightboxIndex + dir;
+            if (newIndex >= 0 && newIndex < state.viewingList.length) {
+                state.currentLightboxIndex = newIndex;
+                updateLightbox();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            const lb = document.getElementById('lightbox');
+            if (!lb || lb.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') navigateLightbox(1);
+            if (e.key === 'ArrowLeft') navigateLightbox(-1);
+        });
+
+        document.addEventListener('DOMContentLoaded', init);
+
+    </script>
+
+            <!-- 
+      ============================================================
+      FOOTER 
+      ============================================================
+    -->
+            <footer id="contact" class="bg-foreground text-background py-16">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                        <div>
+                            <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 mb-6 w-auto object-contain">
+                            <p class="text-gray-300 mb-6">Where the ocean meets creativity. Join us for an unforgettable surf experience.</p>
+                            <div class="flex gap-4">
+                                <a href="#" class="hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-6 h-6">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-6 h-6">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-6 h-6">
+                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                            <ul class="space-y-2">
+                                <li><a href="about.html" class="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
+                                <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Our Services</a></li>
+                                <li><a href="activities.html" class="text-gray-300 hover:text-primary transition-colors">Activities</a></li>
+                                <li><a href="gallery.html" class="text-gray-300 hover:text-primary transition-colors">Gallery</a></li>
+                                <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-4">lessons/Activities</h4>
+                            <ul class="space-y-2 text-gray-300">
+                                <li><a href="courses/open-group-session.html" class="text-gray-300 hover:text-primary transition-colors">open group session</a></li>
+                                <li><a href="courses/private-group-surf.html" class="text-gray-300 hover:text-primary transition-colors">private group surf</a></li>
+                                <li><a href="courses/private-surf-coaching.html" class="text-gray-300 hover:text-primary transition-colors">private surf coaching</a></li>
+                                <li><a href="activities/paradise-valley.html" class="text-gray-300 hover:text-primary transition-colors">paradise valley</a></li>
+                                <li><a href="activities/sand-dunes.html" class="text-gray-300 hover:text-primary transition-colors">sand dunes</a></li>
+                                <li><a href="activities/surf-skate.html" class="text-gray-300 hover:text-primary transition-colors">surf skate</a></li>
+                        </ul></div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-4">Contact</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-2 text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5 text-primary">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg><span>+212 689 885 266</span></li>
+                                <li class="flex items-center gap-2 text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5 text-primary">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg><span>sambasurfshop@gmail.com</span></li>
+                                <li class="flex items-center gap-2 text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-5 h-5 text-primary">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg><span>Taghazout Beach, AGADIR - MOROCCO</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                        <p>© 2025 SAMBA surf shop. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- 
+      WHATSSAP BUTTON
+    -->
+    <div id="wa" class="wa__widget_container">
+        <!-- Floating Button -->
+        <div class="wa__btn_popup">
+            <div class="wa__btn_popup_txt">Need Help? <strong>Chat with us</strong></div>
+            <div class="wa__btn_popup_icon"></div>
+        </div>
+
+        <!-- Chat Box -->
+        <div class="wa__popup_chat_box">
+            <div class="wa__popup_heading">
+                <div class="wa__popup_title">Start a Conversation</div>
+                <div class="wa__popup_intro">Hi! Click one of our member below to chat on <strong>WhatsApp</strong></div>
+            </div>
+            <div class="wa__popup_content wa__popup_content_left">
+                <div class="wa__popup_notice">The team typically replies in a few minutes.</div>
+                
+                <div class="wa__popup_content_list">
+                    <!-- Member Item -->
+                     <div class="wa__popup_content_item">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=212689885266" rel="nofollow noopener noreferrer" class="wa__stt wa__stt_online">
+                            <div class="wa__popup_avatar">
+                                <div class="wa__cs_img_wrap" style="background: url('data:image/svg+xml;utf8,<svg width=\'48px\' height=\'48px\' class=\'nta-whatsapp-default-avatar\' version=\'1.1\' id=\'Layer_1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' x=\'0px\' y=\'0px\' viewBox=\'0 0 512 512\' style=\'enable-background:new 0 0 512 512;\' xml:space=\'preserve\'><path style=\'fill:%23EDEDED;\' d=\'M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z\'/><path style=\'fill:%2355CD6C;\' d=\'M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z\'/><path style=\'fill:%23FEFEFE;\' d=\'M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945\'/></svg>') center center no-repeat; background-size: cover;"></div>
+                            </div>
+                            <div class="wa__popup_txt">
+                                <div class="wa__member_name">Support</div>
+                                <div class="wa__member_duty">Support</div>
+                                <div class="wa__member_status">Online</div>
+                            </div>
+                        </a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.wa__btn_popup').addEventListener('click', function() {
+            const chatBox = document.querySelector('.wa__popup_chat_box');
+            const btn = this;
+            
+            if (chatBox.classList.contains('wa__active')) {
+                // Close Animation
+                chatBox.classList.remove('wa__active');
+                btn.classList.remove('wa__active');
+                
+                // Reset pending states after animation
+                setTimeout(() => {
+                    chatBox.classList.remove('wa__pending');
+                    chatBox.classList.remove('wa__lauch');
+                }, 400);
+            } else {
+                // Open Animation
+                chatBox.classList.add('wa__pending');
+                chatBox.classList.add('wa__active');
+                btn.classList.add('wa__active');
+                
+                // Launch inner items slightly after box opens
+                setTimeout(() => {
+                    chatBox.classList.add('wa__lauch');
+                }, 100);
+            }
+        });
+    </script>
+
+<script src="js/animation.js"></script>
+</body>
+</html>

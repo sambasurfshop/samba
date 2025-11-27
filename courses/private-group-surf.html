@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Surf Lesson Taghazout | Samba Surf Studio</title>
+    <meta name="description" content="Join our beginner surf lesson in Taghazout. 2 hours of fun, safety, and guaranteed waves. Includes equipment and transport. Book now!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+            <!-- favicons-->
+
+    <!-- Modern SVG favicon (used by Chrome, Brave, Firefox, Edge) -->
+    <link rel="icon" type="image/svg+xml" href="../images/fav/samba-fav-32x32.svg">
+    <!-- PNG fallbacks (Safari, iOS, older browsers) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/fav/samba-fav-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/fav/samba-fav-16x16.png">
+
+    <!-- Apple iOS icon (MUST be PNG — use 192x192 or 180x180) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/fav/samba-fav-192x192.png">
+    <!-- Android/Chrome icons via manifest -->
+    <link rel="manifest" href="../images/fav/site.webmanifest">
+    
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+        <link rel="stylesheet"  href="../css/style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        marker: ['Permanent Marker', 'cursive'],
+                    },
+                    colors: {
+                        primary: '#bf5300', 
+                        'primary-dark': '#a64900',
+                        secondary: '#f3f4f6',
+                        foreground: '#1f2937',
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.1)',
+                        'card': '0 0 0 1px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.04)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Prevent FOUC */
+        html { opacity: 0; transition: opacity 0.3s ease-in; }
+        html.loaded { opacity: 1; }
+
+        .text-shadow { text-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+        
+        /* Custom List Bullets */
+        .check-list li { position: relative; padding-left: 2rem; margin-bottom: 0.75rem; }
+        .check-list li::before {
+            content: "";
+            position: absolute; left: 0; top: 0.25rem;
+            width: 1.25rem; height: 1.25rem;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23bf5300' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+            background-size: cover;
+        }
+        
+        .cross-list li { position: relative; padding-left: 2rem; margin-bottom: 0.75rem; color: #6b7280; }
+        .cross-list li::before {
+            content: "";
+            position: absolute; left: 0; top: 0.25rem;
+            width: 1.25rem; height: 1.25rem;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ef4444' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+            background-size: cover;
+        }
+
+        /* Hide Scrollbar for Gallery */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        .flex, [class*="flex-"] {
+    overflow: visible !important;
+}
+        
+
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 flex flex-col min-h-screen" style="background-color: rgb(240 245 214 / var(--tw-text-opacity, 1));">
+
+    <!-- 
+      ============================================================
+      NAVBAR
+      ============================================================
+    -->
+    <!--
+      ============================================================
+      HEADER - TOP (TRANSPARENT)
+      ============================================================
+      - Absolute, taller, fades out on scroll.
+    -->
+            <header id="header-top" class="absolute top-0 left-0 right-0 z-40 text-white w-full">
+                <div class="flex justify-between items-center h-24 px-6 lg:px-10 max-w-7xl mx-auto">
+
+                    <!-- ======== LEFT: LOGO & PHONE ======== -->
+                    <div class="flex items-center gap-6">
+                        <!-- Logo -->
+                        <a href="../index.html" class="flex items-center">
+                            <img src="../images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain">
+                        </a>
+
+                        <!-- Phone Number (Highlighted) -->
+                        <div class="hidden lg:block ml-4 border-l border-white/30 pl-6">
+                            <span class="text-xs opacity-80">Call Us 24/7</span>
+                            <p class="text-l font-semibold text-[#bf5300]/80">
+                                <!-- UPDATED: Color -->
+                                +212 689 885 266
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ======== CENTER: NAVIGATION ======== -->
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <!-- UPDATED: Added .nav-link-animate -->
+                        <a href="../index.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Home</a>
+                        <a href="../about.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">About Us</a>
+
+                        <!-- == Services Dropdown (Full Width) == -->
+                        <div class="group">
+                            <!-- UPDATED: Removed 'relative' -->
+                            <button class="flex items-center gap-1 text-sm font-medium hover:text-[#bf5300]">
+                                <!-- UPDATED: Color -->
+                                <a href="../services.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Services</a>
+                                <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <!-- UPDATED: Dropdown Panel - Full-width -->
+                            <div class="dropdown-panel absolute top-full left-0 right-0 
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transform translate-y-2 group-hover:translate-y-0
+                                ">
+                                <!-- UPDATED: Removed 'w-screen', added 'right-0' -->
+                                <div class="bg-white text-gray-800 shadow-2xl surf-shape">
+                                    <!-- UPDATED: 3-Column Layout (Centered) -->
+                                    <div class="flex p-8 max-w-7xl mx-auto">
+                                        <!-- Part 1: 33% -->
+                                        <div class="w-1/3 flex-shrink-0 pr-8">
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Services</h3>
+                                            <!-- UPDATED: Color -->
+                                            <p class="text-sm text-gray-600">Catch the waves with us! From beginner lessons to private coaching and guided surf adventures, we have the perfect session for everyone.</p>
+                                        </div>
+
+                                        <!-- Part 2: 33% (The List) -->
+                                        <div class="w-1/3 px-8 border-l border-r border-gray-200 flex items-center"> 
+                                            <nav class="flex flex-col gap-2">
+                                                <a href="../courses/open-group-session.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Open Group Session</a>
+                                                <a href="../courses/private-surf-coaching.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Private Surf Coaching</a>
+                                                <a href="../courses/private-group-surf.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Private Group Surf</a>
+                                            </nav>
+                                        </div>
+
+                                        <!-- Part 3: 33% -->
+                                        <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
+                                            <img src="../images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
+                                            <!-- UPDATED: Color -->
+                                            <a href="../services.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                                <!-- UPDATED: Color -->
+                                                Show All Services
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- == activities Dropdown (Full Width) == -->
+                        <div class="group">
+                            <!-- UPDATED: Removed 'relative' -->
+                            <button class="flex items-center gap-1 text-sm font-medium hover:text-[#bf5300]">
+                                <!-- UPDATED: Color -->
+                                <a href="../activities.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Activities</a>
+                                <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <!-- UPDATED: Dropdown Panel - Full-width -->
+                            <div class="dropdown-panel absolute top-full left-0 right-0
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transform translate-y-2 group-hover:translate-y-0
+                                ">
+                                <!-- UPDATED: Removed 'w-screen', added 'right-0' -->
+                                <div class="bg-white text-gray-800 shadow-2xl surf-shape">
+                                    <!-- UPDATED: 3-Column Layout (Centered) -->
+                                    <div class="flex p-8 max-w-7xl mx-auto">
+                                        <!-- Part 1: 33% -->
+                                        <div class="w-1/3 flex-shrink-0 pr-8">
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Activities</h3>
+                                            <!-- UPDATED: Color -->
+                                            <p class="text-sm text-gray-600">From epic surf sessions to trips in Paradise Valley, dune adventures, and surf-skate fun — we bring unforgettable experiences to every day.</p>
+                                        </div>
+
+                                        <!-- Part 2: 33% (The List) -->
+                                        <div class="w-1/3 px-8 border-l border-r border-gray-200 flex items-center">
+                                            <nav class="flex flex-col gap-2">
+                                                <a href="../activities/paradise-valley.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">paradise valley</a>
+                                                <a href="../activities/sand-dunes.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">sand dunes</a>
+                                                <a href="../activities/surf-skate.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">surf skate</a>
+                                            </nav>
+                                        </div>
+
+                                        <!-- Part 3: 33% -->
+                                        <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
+                                            <img src="../images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
+                                            <!-- UPDATED: Color -->
+                                            <a href="../activities.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                                <!-- UPDATED: Color -->
+                                                Show All Activities
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="../gallery.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Gallery</a>
+                        <a href="../contact.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Contact</a>
+                        <!-- UPDATED: Class & Color -->
+                    </nav>
+
+                    <!-- ======== RIGHT: CTA & MOBILE TOGGLE ======== -->
+                    <div class="flex items-center gap-4">
+                        <!-- CTA Button -->
+                        <a href="../contact.html" class="hidden md:block text-sm font-semibold rounded-full px-5 py-2.5
+                            bg-white text-[#bf5300]
+                            hover:bg-gray-200 hover:text-[#a64900] transition-colors">
+                            <!-- UPDATED: Color -->
+                            Book now
+                        </a>
+
+                        <!-- Mobile Menu Toggle -->
+                        <button class="mobile-menu-toggle lg:hidden p-2 rounded-md z-50 text-white">
+                            <svg class="menu-icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                            <svg class="menu-icon-close w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!--
+      ============================================================
+      HEADER - STICKY (GLASSY ORANGE)
+      ============================================================
+      - Fixed, shorter, slides in from top.
+      - Hidden by default with -translate-y-full.
+    -->
+            <header id="header-sticky" class="fixed top-0 left-0 right-0 z-50 text-white w-full
+                             bg-[#bf5300]/90 backdrop-blur-md shadow-lg
+                             -translate-y-full invisible">
+                <div class="flex justify-between items-center h-[4.5rem] px-6 lg:px-10 max-w-7xl mx-auto">
+
+                    <!-- ======== LEFT: LOGO & PHONE ======== -->
+                    <div class="flex items-center gap-6">
+                        <!-- Logo -->
+                        <a href="../index.html" class="text-2xl font-bold tracking-tight">
+                            <img src="../images/samba-logo-white.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain">
+                        </a>
+
+                        <!-- Phone Number (Highlighted) -->
+                        <div class="hidden lg:block ml-4 border-l border-white/30 pl-6">
+                            <span class="text-xs opacity-80">Call Us 24/7</span>
+                            <p class="text-l font-semibold text-white">
+                                +212 689 885 266
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ======== CENTER: NAVIGATION ======== -->
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <!-- UPDATED: Added .nav-link-animate (and adjusted color for dark bg) -->
+                        <a href="../index.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Home</a>
+                        <a href="../about.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">About Us</a>
+
+                        <!-- == Services Dropdown (Full Width) == -->
+                        <div class="group">
+                            <!-- UPDATED: Removed 'relative' -->
+                            <button class="flex items-center gap-1 text-sm font-medium hover:text-gray-200">
+                                <a href="../services.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Serices</a>
+                                <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <!-- UPDATED: Dropdown Panel - Full-width -->
+                            <div class="dropdown-panel absolute top-full left-0 right-0
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transform translate-y-2 group-hover:translate-y-0
+                                ">
+                                <!-- UPDATED: Removed 'w-screen', added 'right-0' -->
+                                <div class="bg-white text-gray-800 shadow-2xl surf-shape">
+                                    <!-- UPDATED: 3-Column Layout (Centered) -->
+                                    <div class="flex p-8 max-w-7xl mx-auto">
+                                        <!-- Part 1: 33% -->
+                                        <div class="w-1/3 flex-shrink-0 pr-8">
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Services</h3>
+                                            <!-- UPDATED: Color -->
+                                            <p class="text-sm text-gray-600">Catch the waves with us! From beginner lessons to private coaching and guided surf adventures, we have the perfect session for everyone.</p>
+                                        </div>
+
+                                        <!-- Part 2: 33% (The List) -->
+                                        <div class="w-1/3 px-8 border-l border-r border-gray-200 flex items-center">
+                                            <nav class="flex flex-col gap-2">
+                                                <a href="../courses/open-group-session.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Open Group Session</a>
+                                                <a href="../courses/private-surf-coaching.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Private Surf Coaching</a>
+                                                <a href="../courses/private-group-surf.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">Private Group Surf</a>
+                                            </nav>
+                                        </div>
+
+                                        <!-- Part 3: 33% -->
+                                        <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
+                                            <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
+                                            <!-- UPDATED: Color -->
+                                            <a href="#" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                                <!-- UPDATED: Color -->
+                                                Show All Services
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- == activities Dropdown (Full Width) == -->
+                        <div class="group">
+                            <!-- UPDATED: Removed 'relative' -->
+                            <button class="flex items-center gap-1 text-sm font-medium hover:text-gray-200">
+                                <a href="../activities.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Activities</a>
+                                <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <!-- UPDATED: Dropdown Panel - Full-width -->
+                            <div class="dropdown-panel absolute top-full left-0 right-0
+                                opacity-0 invisible group-hover:opacity-100 group-hover:visible
+                                transform translate-y-2 group-hover:translate-y-0
+                                ">
+                                <!-- UPDATED: Removed 'w-screen', added 'right-0' -->
+                                <div class="bg-white text-gray-800 shadow-2xl surf-shape">
+                                    <!-- UPDATED: 3-Column Layout (Centered) -->
+                                    <div class="flex p-8 max-w-7xl mx-auto">
+                                        <!-- Part 1: 33% -->
+                                        <div class="w-1/3 flex-shrink-0 pr-8">
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Activities</h3>
+                                            <!-- UPDATED: Color -->
+                                            <p class="text-sm text-gray-600">From epic surf sessions to trips in Paradise Valley, dune adventures, and surf-skate fun — we bring unforgettable experiences to every day.</p>
+                                        </div>
+
+                                        <!-- Part 2: 33% (The List) -->
+                                        <div class="w-1/3 px-8 border-l border-r border-gray-200 flex items-center">
+                                            <nav class="flex flex-col gap-2">
+                                                <a href="../activities/paradise-valley.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">paradise valley</a>
+                                                <a href="../activities/sand-dunes.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">sand dunes</a>
+                                                <a href="../activities/surf-skate.html" class="nav-link-animate block text-sm font-medium text-gray-700 hover:text-[#bf5300]">surf skate</a>
+                                            </nav>
+                                        </div>
+
+                                        <!-- Part 3: 33% -->
+                                        <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
+                                            <img src="../images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
+                                            <!-- UPDATED: Color -->
+                                            <a href="../activities.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                                <!-- UPDATED: Color -->
+                                                Show All Activities
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="../gallery.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Gallery</a>
+                        <a href="../contact.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Contact</a>
+                        <!-- UPDATED: Class -->
+                    </nav>
+
+                    <!-- ======== RIGHT: CTA & MOBILE TOGGLE ======== -->
+                    <div class="flex items-center gap-4">
+                        <!-- CTA Button -->
+                        <a href="../contact.html" class="hidden md:block text-sm font-semibold rounded-full px-5 py-2.5
+                            bg-white text-[#bf5300]
+                            hover:bg-gray-200 transition-colors">
+                    Book now
+                </a>
+
+                        <!-- Mobile Menu Toggle -->
+                        <button class="mobile-menu-toggle lg:hidden p-2 rounded-md z-50 text-white">
+                            <svg class="menu-icon-open w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                            <svg class="menu-icon-close w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- MOBILE MENU (FULL SCREEN) -->
+
+            <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-gray-900/95 backdrop-blur-lg
+                flex flex-col items-center justify-start gap-8 pt-24 px-6
+                opacity-0 invisible transition-all duration-300 lg:hidden z-[60]">
+
+                <!-- Mobile Menu Close Button (Top Right) -->
+                <button class="mobile-menu-toggle absolute top-6 right-6 p-2 rounded-md z-50 text-white">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+                <!-- Logo at top-center -->
+                <a href="../index.html" class="mobile-menu-link text-2xl font-bold text-white mb-12">
+                    <img src="../images/samba-logo-white.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain">
+                </a>
+
+                <a href="../index.html" class="mobile-menu-link text-white text-2xl font-semibold">Home</a>
+                <a href="../about.html" class="mobile-menu-link text-white text-2xl font-semibold">About Us</a>
+
+                <!-- Mobile Services Dropdown -->
+                <div class="text-center">
+                    <button class="mobile-dropdown-toggle text-white text-2xl font-semibold flex items-center gap-2">
+                        <a href="../services.html" class="mobile-menu-link text-white text-2xl font-semibold">Services</a>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-content hidden mt-4 space-y-3">
+                        <a href="../courses/open-group-session.html" class="mobile-menu-link block text-gray-400 text-lg">Open Group Session</a>
+                        <a href="../courses/private-surf-coaching.html" class="mobile-menu-link block text-gray-400 text-lg">Private Surf Coaching</a>
+                        <a href="../courses/private-group-surf.html" class="mobile-menu-link block text-gray-400 text-lg">Private Group Surf</a>
+                    </div>
+                </div>
+
+                <!-- Mobile activities Dropdown -->
+                <div class="text-center">
+                    <button class="mobile-dropdown-toggle text-white text-2xl font-semibold flex items-center gap-2">
+                        <a href="../activities.html" class="mobile-menu-link text-white text-2xl font-semibold">Activities</a>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mobile-dropdown-content hidden mt-4 space-y-3">
+                        <a href="../activities/paradise-valley.html" class="mobile-menu-link block text-gray-400 text-lg">paradise valley</a>
+                        <a href="../activities/sand-dunes.html" class="mobile-menu-link block text-gray-400 text-lg">sand dunes</a>
+                        <a href="../activities/surf-skate.html" class="mobile-menu-link block text-gray-400 text-lg">surf skate</a>
+                    </div>
+                </div>
+                <a href="../gallery.html" class="mobile-menu-link text-white text-2xl font-semibold">Gallery</a>
+                <a href="../contact.html" class="mobile-menu-link text-white text-2xl font-semibold">Contact</a>
+
+                <a href="../contact.html" class="mobile-menu-link mt-8 text-lg font-semibold rounded-full px-6 py-3 bg-[#bf5300] text-white hover:bg-[#a64900]">
+                    <!-- UPDATED: Color -->
+                    Book now
+                </a>
+            </div>
+
+            <!--
+      ============================================================
+      END HEADER MENU
+      ============================================================
+    -->
+
+    <!-- 
+      ============================================================
+      HERO SECTION
+      ============================================================
+    -->
+    <section id="home" class="relative flex items-center justify-center overflow-hidden min-h-screen">
+                    <div class="absolute inset-0 z-0" style="background-image: url(../images/open-group-session/22.webp); background-size: cover; background-position: center center; background-attachment: fixed;">
+                        <div class="absolute inset-0 bg-gradient-to-b from-foreground/60 via-foreground/40 to-background/80"></div>
+                    </div>
+                    <div class="relative z-10 container mx-auto px-4 text-center text-white">
+                        <div class="animate-fadeInUp">
+                            <div class="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves w-5 h-5">
+                                    <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                                    <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                                    <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                                </svg><span class="text-sm font-medium">Where Art Meets the Ocean</span></div>
+                            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Open Group <span class="text-primary"> Lessons</span></h1>
+                            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-gray-100">Join the vibe, meet new people, and enjoy a fun introduction to surfing.</p>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full h-24 md:h-32 shape-hero z-10">
+                        <svg class="w-full h-full" viewBox="0 0 1440 120" preserveAspectRatio="none" fill="currentColor">
+                            <path d="M0,80 C360,130 720,30 1080,80 C1260,105 1350,80 1440,70 L1440,120 L0,120 Z"></path>
+                        </svg>
+                    </div>
+                </section>
+
+    <!-- 
+      ============================================================
+      MAIN CONTENT
+      ============================================================
+    -->
+    <main id="details" class="relative z-20 pb-24 lg:pt-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-8 xl:gap-16">
+                
+                <!-- LEFT COLUMN: Content -->
+                <div class="lg:w-2/3 lg:-mt-20 relative z-30">
+
+                    <div class="lg:hidden mb-8 relative group">
+                         <!-- Subtle rotation background -->
+                        <div class="absolute inset-0 bg-primary/10 rounded-3xl transform rotate-1"></div>
+                        
+                        <!-- Card Content -->
+                        <div class="bg-white rounded-3xl p-6 shadow-xl border border-gray-100 relative z-10">
+                            <div class="flex justify-between items-start mb-5">
+                                <div>
+                                     <span class="bg-[#bf5300] text-white text-[10px] font-bold px-2 py-1 rounded-md uppercase tracking-wider shadow-sm mb-2 inline-block">Most Popular</span>
+                                     <h3 class="font-black text-xl text-gray-900">Private Group Lesson</h3>
+                                </div>
+                                 <div class="text-right">
+                                    <div class="flex items-center justify-end gap-2">
+                                        <span class="text-sm text-gray-400 line-through font-medium">40€</span>
+                                        <p class="text-3xl font-black text-primary">35€</p>
+                                    </div>
+                                    <p class="text-[10px] text-gray-400 font-medium">per person</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Quick Specs Bar -->
+                            <div class="flex justify-between gap-2 text-xs text-gray-600 mb-6 bg-gray-50 p-3 rounded-xl border border-gray-100">
+                                 <div class="flex flex-col items-center gap-1">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="clock" class="lucide lucide-clock w-4 h-4 text-primary"><path d="M12 6v6l4 2"></path><circle cx="12" cy="12" r="10"></circle></svg> 
+                                     <span class="font-bold">2 Hours</span>
+                                 </div>
+                                 <div class="flex h-8 w-px bg-gray-200"></div>
+                                 <div class="flex flex-col items-center gap-1">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="users" class="lucide lucide-users w-4 h-4 text-primary"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg> 
+                                     <span class="font-bold">Max 6</span>
+                                 </div>
+                                 <div class="flex h-8 w-px bg-gray-200"></div>
+                                 <div class="flex flex-col items-center gap-1">
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="waves" class="lucide lucide-waves w-4 h-4 text-primary"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path></svg> 
+                                     <span class="font-bold">All Gear</span>
+                                 </div>
+                            </div>
+
+                            <!-- Includes List (Short) -->
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start gap-3 text-sm text-gray-700">
+                                    <div class="bg-green-100 p-1 rounded-full text-green-600 shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-3 h-3"><path d="M20 6 9 17l-5-5"></path></svg></div>
+                                    <span class="font-medium">Full Equipment (Wetsuit + Board)</span>
+                                </li>
+                                 <li class="flex items-start gap-3 text-sm text-gray-700">
+                                    <div class="bg-green-100 p-1 rounded-full text-green-600 shrink-0 mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-3 h-3"><path d="M20 6 9 17l-5-5"></path></svg></div>
+                                    <span class="font-medium">Free Hotel Pickup &amp; Drop-off</span>
+                                </li>
+                            </ul>
+
+                            <button class="w-full bg-[#bf5300] text-white text-center font-bold py-3.5 rounded-xl shadow-lg shadow-orange-200 hover:bg-[#a64900] hover:shadow-xl transition-all active:scale-95 flex items-center justify-center gap-2">
+                                Book Now <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Intro Card -->
+                    <div class="bg-white rounded-3xl p-6 md:p-10 shadow-soft border border-gray-100 mb-8">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="flex-1">
+                                <h2 class="text-3xl font-bold mb-4 text-gray-900">Why choose this lesson?</h2>
+                                <p class="text-gray-600 leading-relaxed mb-6">
+                                    <strong>Surf together, learn together.</strong> <br> Our <strong>Private Group Lesson</strong> is ideal for couples, families, or friends who want a fun, relaxed, and fully personalized surf experience. Enjoy the ocean at your own pace with your group while receiving guidance tailored to your skill level.
+                                </p>
+                                <div class="flex flex-wrap gap-4">
+                                    <span class="bg-orange-50 text-orange-700 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
+                                        <i data-lucide="shield-check" class="w-4 h-4"></i> Customized Coaching — Instructor adapts to your group’s level
+                                    </span>
+                                    <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
+                                        <i data-lucide="waves" class="w-4 h-4"></i> Private & Relaxed — Only your group in the session
+                                    </span>
+                                    <span class="bg-green-50 text-green-700 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
+                                        <i data-lucide="check-circle" class="w-4 h-4"></i> All Equipment Included — Boards, wetsuits, leash, wax
+                                    </span>
+                                    <span class="bg-orange-50 text-orange-700 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
+                                        <i data-lucide="shield-check" class="w-4 h-4"></i> Safe & Supportive — Friendly instructors for everyone
+                                    </span>
+                                    <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-lg text-sm font-semibold flex items-center gap-2">
+                                        <i data-lucide="waves" class="w-4 h-4"></i> Memorable Experience — Photos available on request
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Itinerary -->
+                    <div class="bg-white rounded-3xl p-6 md:p-10 shadow-card border border-gray-100 mb-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+                            <span class="bg-primary/10 text-primary p-2 rounded-lg"><i data-lucide="map" class="w-6 h-6"></i></span>
+                            LESSON ROADMAP
+                        </h3>
+                        
+                        <div class="relative border-l-2 border-dashed border-gray-200 ml-4 space-y-12">
+                            <!-- Step 1 -->
+                            <div class="relative pl-10">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#bf5300] ring-4 ring-white"></div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900">Meet & Gear Up at Samba Surf Shop (10–15 min)</h4>
+                                    <p class="text-gray-500 text-sm mt-1">Meet your instructor directly at Samba Surf Shop, get your wetsuit, and choose the board that fits your level. Once everyone is ready, you’ll head together to the beach.</p>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="relative pl-10">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#bf5300] ring-4 ring-white"></div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900">Beach Theory (10–15 min)</h4>
+                                    <p class="text-gray-500 text-sm mt-1">Learn the basics on the sand:</p>
+                                    <ul class="list-disc list-inside text-sm text-gray-600 font-medium mt-2 space-y-1">
+                                        <li>The “pop-up” technique</li>
+                                        <li>Paddling & balance</li>
+                                        <li>Ocean safety and wave basics</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="relative pl-10">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#bf5300] ring-4 ring-white"></div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900">Hit the Water (1.5 Hours)</h4>
+                                    <p class="text-gray-500 text-sm mt-1">Head into waist-deep water with your instructor. <br> You’ll practice paddling, standing up, and catching your first waves — with help every step of the way.</p>
+                                </div>
+                            </div>
+                            <!-- Step 4 -->
+                            <div class="relative pl-10">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#bf5300] ring-4 ring-white"></div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900">Break & Feedback</h4>
+                                    <p class="text-gray-500 text-sm mt-1">Relax, drink water, and get personalized tips to improve your next session.</p>
+                                </div>
+                            </div>
+                            <!-- Step 5 -->
+                            <div class="relative pl-10">
+                                <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#bf5300] ring-4 ring-white"></div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-gray-900">Free Surf Time (Optional – Until End of Day)</h4>
+                                    <p class="text-gray-500 text-sm mt-1">After the guided session, students who want to keep practicing can continue surfing independently, using the board for as long as they need until the end of the day.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Grid -->
+                    <div class="mb-12">
+                        <h3 class="text-2xl font-bold mb-6 px-2">Captured Moments</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 h-[32rem] md:h-[40rem]">
+                            <div class="md:col-span-2 relative group overflow-hidden rounded-2xl">
+                                <img src="https://www.airtahitinui.com/sites/default/files/styles/focal_point_scale_crop_375x600/public/medias/images/2023-05/full-hd-photo-animees-s-mailion-4.jpg?h=e75c301f&itok=DSqqKLVF" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Surfing">
+                            </div>
+                            <div class="relative group overflow-hidden rounded-2xl">
+                                <img src="https://images.unsplash.com/photo-1415931633537-351070d20b81?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Group">
+                            </div>
+                            <div class="relative group overflow-hidden rounded-2xl">
+                                <img src="https://images.unsplash.com/photo-1528150177508-7cc0c36cda5c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Smiles">
+                                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i data-lucide="instagram" class="text-white w-8 h-8"></i>
+                                </div>
+                            </div>
+                            <div class="relative group overflow-hidden rounded-2xl">
+                                <img src="https://images.unsplash.com/photo-1415931633537-351070d20b81?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Group">
+                            </div>
+                            <div class="relative group overflow-hidden rounded-2xl">
+                                <img src="https://images.unsplash.com/photo-1528150177508-7cc0c36cda5c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Smiles">
+                                <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <i data-lucide="instagram" class="text-white w-8 h-8"></i>
+                                </div>
+                            </div>
+                            <div class="md:col-span-2 relative group overflow-hidden rounded-2xl">
+                                <img src="https://www.airtahitinui.com/sites/default/files/styles/focal_point_scale_crop_375x600/public/medias/images/2023-05/full-hd-photo-animees-s-mailion-4.jpg?h=e75c301f&itok=DSqqKLVF" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Surfing">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ -->
+                    <div id="faq" class="space-y-4">
+                        <h3 class="text-2xl font-bold mb-4 px-2">COMMON QUESTIONS</h3>
+                        <details class="group bg-white p-5 rounded-2xl border border-gray-100 open:shadow-md transition-all">
+                            <summary class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none select-none">
+                                <span>Do I need to know how to swim?</span>
+                                <span class="bg-gray-100 p-1 rounded-full group-open:rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
+                            </summary>
+                            <p class="text-gray-600 mt-4 leading-relaxed">Basic comfort in the water is enough. Lessons are held in waist-deep water, so you can always stand.</p>
+                        </details>
+                        <details class="group bg-white p-5 rounded-2xl border border-gray-100 open:shadow-md transition-all">
+                            <summary class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none select-none">
+                                <span>What should I bring?</span>
+                                <span class="bg-gray-100 p-1 rounded-full group-open:rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
+                            </summary>
+                            <p class="text-gray-600 mt-4 leading-relaxed">Just:</p>
+                            <ul class="list-disc list-inside text-sm text-gray-600 font-medium mt-2 space-y-1">
+                                <li>Swimwear (under the wetsuit)</li>
+                                <li>Towel</li>
+                                <li>Sunscreen</li>
+                                <li>Bottle of water</li>
+                            </ul>
+                            <p class="text-gray-600 mt-4 leading-relaxed">We provide board + wetsuit + leash + wax.</p>
+                    
+                        </details>
+                        <details class="group bg-white p-5 rounded-2xl border border-gray-100 open:shadow-md transition-all">
+                            <summary class="flex justify-between items-center font-bold text-gray-800 cursor-pointer list-none select-none">
+                                <span>Is transport included?</span>
+                                <span class="bg-gray-100 p-1 rounded-full group-open:rotate-180 transition-transform"><i data-lucide="chevron-down" class="w-4 h-4"></i></span>
+                            </summary>
+                            <p class="text-gray-600 mt-4 leading-relaxed">Because it’s a group lesson, meeting point is usually the beach. <br> (If you want, I can modify this section depending on your real service.)</p>
+                        </details>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT COLUMN: Sticky Booking Card (Desktop) -->
+                <div class="hidden lg:block lg:w-1/3 relative">
+                    <div id="book-area" class="sticky top-20">
+                        <div class="bg-white p-8 rounded-3xl shadow-soft border border-gray-100 overflow-hidden relative">
+                            <!-- Discount Badge -->
+                            <div class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-xl">
+                                10% OFF ONLINE
+                            </div>
+
+                            <!-- Header -->
+                            <div class="mb-6">
+                                <h3 class="font-black text-2xl text-gray-900">Private Group Lesson</h3>
+                                <div class="flex items-end gap-2 mt-2">
+                                    <span class="text-4xl font-black text-primary">35€</span>
+                                    <span class="text-gray-400 font-medium mb-1 line-through text-sm">40€</span>
+                                    <span class="text-xs text-gray-400 mb-2">/ person</span>
+                                </div>
+                            </div>
+
+                            <!-- Highlights -->
+                            <div class="grid grid-cols-2 gap-3 mb-6">
+                                <div class="bg-gray-50 p-3 rounded-xl border border-gray-100 text-center">
+                                    <i data-lucide="clock" class="w-5 h-5 mx-auto mb-1 text-primary"></i>
+                                    <span class="block font-bold text-gray-800 text-sm">2 Hours</span>
+                                </div>
+                                <div class="bg-gray-50 p-3 rounded-xl border border-gray-100 text-center">
+                                    <i data-lucide="users" class="w-5 h-5 mx-auto mb-1 text-primary"></i>
+                                    <span class="block font-bold text-gray-800 text-sm">Max 6</span>
+                                </div>
+                            </div>
+
+                            <!-- Includes -->
+                            <div class="space-y-6 mb-8">
+                                <div>
+                                    <h5 class="font-bold text-sm mb-3 text-gray-900 uppercase tracking-wide">Included</h5>
+                                    <ul class="check-list text-sm text-gray-600 font-medium">
+                                        <li>Certified Surf Instructor</li>
+                                        <li>Surfboard & Wetsuit</li>
+                                        <li>Ocean safety introduction</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-sm mb-3 text-gray-900 uppercase tracking-wide">Not Included</h5>
+                                    <ul class="cross-list text-sm text-gray-600 font-medium">
+                                        <li>Lunch</li>
+                                        <li>Beach Towel</li>
+                                        <li>Hotel Pickup & Drop-off</li>
+                                        <li>Photos (available on request)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transform active:scale-95 transition-all flex items-center justify-center gap-2 group">
+                                <span>Book Now</span>
+                                <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                            
+                        </div>
+                        
+                        <!-- Mini Review -->
+                        <div class="mt-6 bg-white/50 backdrop-blur p-4 rounded-2xl flex items-center gap-4 border border-gray-200/50">
+                            <img src="../images/open-group-session/20.webp" class="w-12 h-12 rounded-full object-cover ring-2 ring-primary" alt="Head Coach">
+                            <div>
+                                <p>Head Coach</p>
+                                <p class="text-xs text-gray-500 font-medium mt-1">"Best instructor ever!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- 
+      ============================================================
+      TESTIMONIALS
+      ============================================================
+    -->
+    <section id="reviews" class="bg-gray-900 text-white py-20 relative overflow-hidden">
+        <!-- Decoration -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Vibes from the Tribe</h2>
+                <p class="text-gray-400">Join over 5,000 happy students.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Review Card -->
+                <div class="bg-gray-800/50 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-primary/50 transition-colors">
+                    <div class="text-[#bf5300] mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="quote" class="lucide lucide-quote w-8 h-8 fill-current"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"I was terrified of the ocean, but the instructors were so patient. I stood up on my second try! Highlight of my trip to Morocco."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold">JD</div>
+                        <div>
+                            <p class="font-bold text-sm">Sarah Jenkins</p>
+                            <p class="text-xs text-gray-500">London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review Card -->
+                <div class="bg-gray-800/50 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-primary/50 transition-colors">
+                    <div class="text-[#bf5300] mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="quote" class="lucide lucide-quote w-8 h-8 fill-current"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"I was terrified of the ocean, but the instructors were so patient. I stood up on my second try! Highlight of my trip to Morocco."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold">JD</div>
+                        <div>
+                            <p class="font-bold text-sm">Sarah Jenkins</p>
+                            <p class="text-xs text-gray-500">London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review Card -->
+                <div class="bg-gray-800/50 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-primary/50 transition-colors">
+                    <div class="text-[#bf5300] mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="quote" class="lucide lucide-quote w-8 h-8 fill-current"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"I was terrified of the ocean, but the instructors were so patient. I stood up on my second try! Highlight of my trip to Morocco."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold">JD</div>
+                        <div>
+                            <p class="font-bold text-sm">Sarah Jenkins</p>
+                            <p class="text-xs text-gray-500">London, UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 
+      ============================================================
+      FOOTER 
+      ============================================================
+    -->
+
+
+            <footer id="contact" class="bg-foreground text-background py-16">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                        <div>
+                            <img src="../images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 mb-6 w-auto object-contain">
+                            <p class="text-gray-300 mb-6">Where the ocean meets creativity. Join us for an unforgettable surf experience.</p>
+                            <div class="flex gap-4">
+                                <a href="#" class="hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-6 h-6">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-6 h-6">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" class="hover:text-primary transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-6 h-6">
+                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                            <ul class="space-y-2">
+                                <li><a href="../about.html" class="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
+                                <li><a href="../services.html" class="text-gray-300 hover:text-primary transition-colors">Our Services</a></li>
+                                <li><a href="../activities.html" class="text-gray-300 hover:text-primary transition-colors">Activities</a></li>
+                                <li><a href="../gallery.html" class="text-gray-300 hover:text-primary transition-colors">Gallery</a></li>
+                                <li><a href="../contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-4">lessons/Activities</h4>
+                            <ul class="space-y-2 text-gray-300">
+                                <li><a href="../courses/open-group-session.html" class="text-gray-300 hover:text-primary transition-colors">open group session</a></li>
+                                <li><a href="../courses/private-group-surf.html" class="text-gray-300 hover:text-primary transition-colors">private group surf</a></li>
+                                <li><a href="../courses/private-surf-coaching.html" class="text-gray-300 hover:text-primary transition-colors">private surf coaching</a></li>
+                                <li><a href="../activities/paradise-valley.html" class="text-gray-300 hover:text-primary transition-colors">paradise valley</a></li>
+                                <li><a href="../activities/sand-dunes.html" class="text-gray-300 hover:text-primary transition-colors">sand dunes</a></li>
+                                <li><a href="../activities/surf-skate.html" class="text-gray-300 hover:text-primary transition-colors">surf skate</a></li>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold mb-4">Contact</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-2 text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-5 h-5 text-primary">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg><span>+212 689 885 266</span></li>
+                                <li class="flex items-center gap-2 text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-5 h-5 text-primary">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg><span>sambasurfshop@gmail.com</span></li>
+                                <li class="flex items-center gap-2 text-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-5 h-5 text-primary">
+                                        <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg><span>Taghazout Beach, AGADIR - MOROCCO</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                        <p>© 2025 SAMBA surf shop. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- 
+      WHATSSAP BUTTON
+    -->
+    <div id="wa" class="wa__widget_container">
+        <!-- Floating Button -->
+        <div class="wa__btn_popup">
+            <div class="wa__btn_popup_txt">Need Help? <strong>Chat with us</strong></div>
+            <div class="wa__btn_popup_icon"></div>
+        </div>
+
+        <!-- Chat Box -->
+        <div class="wa__popup_chat_box">
+            <div class="wa__popup_heading">
+                <div class="wa__popup_title">Start a Conversation</div>
+                <div class="wa__popup_intro">Hi! Click one of our member below to chat on <strong>WhatsApp</strong></div>
+            </div>
+            <div class="wa__popup_content wa__popup_content_left">
+                <div class="wa__popup_notice">The team typically replies in a few minutes.</div>
+                
+                <div class="wa__popup_content_list">
+                    <!-- Member Item -->
+                     <div class="wa__popup_content_item">
+                        <!-- Link to WhatsApp API using the number from your JS config (+212689885266) -->
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=212689885266" rel="nofollow noopener noreferrer" class="wa__stt wa__stt_online">
+                            <div class="wa__popup_avatar">
+                                <div class="wa__cs_img_wrap" style="background: url('data:image/svg+xml;utf8,<svg width=\'48px\' height=\'48px\' class=\'nta-whatsapp-default-avatar\' version=\'1.1\' id=\'Layer_1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\' x=\'0px\' y=\'0px\' viewBox=\'0 0 512 512\' style=\'enable-background:new 0 0 512 512;\' xml:space=\'preserve\'><path style=\'fill:%23EDEDED;\' d=\'M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z\'/><path style=\'fill:%2355CD6C;\' d=\'M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z\'/><path style=\'fill:%23FEFEFE;\' d=\'M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945\'/></svg>') center center no-repeat; background-size: cover;"></div>
+                            </div>
+                            <div class="wa__popup_txt">
+                                <div class="wa__member_name">Support</div>
+                                <div class="wa__member_duty">Support</div>
+                                <div class="wa__member_status">Online</div>
+                            </div>
+                        </a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+      ============================================================
+      MOBILE STICKY BOTTOM BAR (Conversion)
+      ============================================================
+    -->
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 lg:hidden z-50 flex items-center justify-between shadow-2xl safe-area-pb">
+        <div>
+            <p class="text-xs text-gray-500">Total Price</p>
+            <p class="text-2xl font-black text-primary">35€</p>
+        </div>
+        <button class="bg-primary text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:bg-primary-dark transition-colors flex items-center gap-2">
+            Book Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Init Icons
+        lucide.createIcons();
+
+        // Prevent FOUC
+        document.addEventListener('DOMContentLoaded', () => {
+            document.documentElement.classList.add('loaded');
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-black/90', 'backdrop-blur-md', 'shadow-lg');
+                navbar.classList.remove('py-4');
+                navbar.classList.add('py-3');
+            } else {
+                navbar.classList.remove('bg-black/90', 'backdrop-blur-md', 'shadow-lg', 'py-3');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        /* WHATSSAP BUTTON */
+
+document.querySelector('.wa__btn_popup').addEventListener('click', function() {
+            const chatBox = document.querySelector('.wa__popup_chat_box');
+            const btn = this;
+            
+            if (chatBox.classList.contains('wa__active')) {
+                // Close Animation
+                chatBox.classList.remove('wa__active');
+                btn.classList.remove('wa__active');
+                
+                // Reset pending states after animation
+                setTimeout(() => {
+                    chatBox.classList.remove('wa__pending');
+                    chatBox.classList.remove('wa__lauch');
+                }, 400);
+            } else {
+                // Open Animation
+                chatBox.classList.add('wa__pending');
+                chatBox.classList.add('wa__active');
+                btn.classList.add('wa__active');
+                
+                // Launch inner items slightly after box opens
+                setTimeout(() => {
+                    chatBox.classList.add('wa__lauch');
+                }, 100);
+            }
+        });
+        
+    </script>
+
+    <script src="../js/animation.js"></script>
+
+
+</body>
+</html>
