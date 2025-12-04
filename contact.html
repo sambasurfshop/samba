@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us | Samba surf Shop</title>
@@ -20,6 +21,21 @@
 
     <!-- Google reCAPTCHA API -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+            <!-- favicons-->
+
+    <!-- Modern SVG favicon (used by Chrome, Brave, Firefox, Edge) -->
+    <link rel="icon" type="image/svg+xml" href="images/fav/samba-fav-32x32.svg">
+    <!-- PNG fallbacks (Safari, iOS, older browsers) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/samba-fav-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/samba-fav-16x16.png">
+    <!-- ICO fallback (legacy browsers) -->
+    <link rel="shortcut icon" href="images/fav/samba-fav-32x32.ico">
+    <!-- Apple iOS icon (MUST be PNG — use 192x192 or 180x180) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/samba-fav-192x192.png">
+    <!-- Android/Chrome icons via manifest -->
+    <link rel="manifest" href="images/fav/site.webmanifest">
+    
   
 </head>
 
@@ -233,7 +249,9 @@
                     'info': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="16" y2="12"></line><line x1="12" x2="12.01" y1="8" y2="8"></line></svg>`,
                     'check-circle': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg>`,
                     'x': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>`,
-                    'chevron-down': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="m6 9 6 6 6-6"></path></svg>`
+                    'chevron-down': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="m6 9 6 6 6-6"></path></svg>`,
+                    'check': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><polyline points="20 6 9 17 4 12"></polyline></svg>`,
+                    'alert-triangle': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>`
                 };
 
                 // Function to replace placeholder elements with actual Lucide SVG
@@ -535,6 +553,26 @@
             </div>
         </div>
     </div>
+    
+    <!-- --- SUCCESS/ERROR POPUP MODAL --- -->
+    <div id="status-modal" class="fixed inset-0 z-[60] hidden items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-opacity duration-300">
+        <div class="bg-white w-full max-w-sm rounded-3xl shadow-2xl overflow-hidden transform scale-95 transition-all duration-300">
+            <div class="p-6 text-center">
+                <!-- Dynamic Icon Container -->
+                <div id="status-icon-container" class="mx-auto flex items-center justify-center h-16 w-16 rounded-full mb-4 transition-colors bg-green-100">
+                    <span id="status-icon-success" data-lucide="check" class="w-8 h-8 text-green-600 hidden"></span>
+                    <span id="status-icon-error" data-lucide="alert-triangle" class="w-8 h-8 text-red-600 hidden"></span>
+                </div>
+                
+                <h3 id="status-title" class="text-2xl font-bold text-slate-900 mb-2">Success!</h3>
+                <p id="status-message" class="text-slate-500 text-sm leading-relaxed">Your message has been sent successfully.</p>
+                
+                <button id="status-close-btn" class="mt-6 w-full bg-slate-900 text-white font-bold py-3 rounded-xl hover:bg-slate-800 transition-colors shadow-lg active:scale-95">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
 
 
     <!-- --- JAVASCRIPT LOGIC --- -->
@@ -737,11 +775,11 @@
                 input.addEventListener('input', calculateTotal);
             });
 
-            // --- Modal Logic ---
+            // --- Invoice Modal Logic ---
             viewDetailsBtn.addEventListener('click', () => {
                 const data = calculateTotal();
                 if (!data.serviceName) {
-                    alert('Please select a Course or Activity before viewing details.');
+                    showStatusModal('error', 'Please select a Course or Activity before viewing details.');
                     return;
                 }
                 updateInvoice(data);
@@ -749,45 +787,87 @@
                 invoiceModal.classList.add('flex');
             });
 
-            const hideModal = () => {
+            const hideInvoiceModal = () => {
                 invoiceModal.classList.add('hidden');
                 invoiceModal.classList.remove('flex');
             };
 
-            closeModalBtn.addEventListener('click', hideModal);
-            modalConfirmBtn.addEventListener('click', hideModal);
+            closeModalBtn.addEventListener('click', hideInvoiceModal);
+            modalConfirmBtn.addEventListener('click', hideInvoiceModal);
 
             // Handle outside click to close modal
             invoiceModal.addEventListener('click', (e) => {
                 if (e.target === invoiceModal) {
-                    hideModal();
+                    hideInvoiceModal();
                 }
             });
 
+            // --- STATUS POPUP MODAL LOGIC (New) ---
+            const statusModal = document.getElementById('status-modal');
+            const statusCloseBtn = document.getElementById('status-close-btn');
+            const statusTitle = document.getElementById('status-title');
+            const statusMessage = document.getElementById('status-message');
+            const statusIconContainer = document.getElementById('status-icon-container');
+            const statusIconSuccess = document.getElementById('status-icon-success');
+            const statusIconError = document.getElementById('status-icon-error');
 
-            // --- Form Submission Handlers (UPDATED for PHP) ---
+            function showStatusModal(type, message) {
+                // Reset styles
+                statusIconSuccess.classList.add('hidden');
+                statusIconError.classList.add('hidden');
+                statusIconContainer.className = "mx-auto flex items-center justify-center h-16 w-16 rounded-full mb-4 transition-colors";
+                
+                if (type === 'success') {
+                    statusIconSuccess.classList.remove('hidden');
+                    statusIconContainer.classList.add('bg-green-100');
+                    statusTitle.innerText = "Success!";
+                    statusTitle.className = "text-2xl font-bold text-slate-900 mb-2";
+                } else {
+                    statusIconError.classList.remove('hidden');
+                    statusIconContainer.classList.add('bg-red-100');
+                    statusTitle.innerText = "Ooops!";
+                    statusTitle.className = "text-2xl font-bold text-red-600 mb-2";
+                }
+
+                statusMessage.innerText = message;
+                statusModal.classList.remove('hidden');
+                statusModal.classList.add('flex');
+            }
+
+            function hideStatusModal() {
+                statusModal.classList.add('hidden');
+                statusModal.classList.remove('flex');
+            }
+
+            statusCloseBtn.addEventListener('click', hideStatusModal);
+            statusModal.addEventListener('click', (e) => {
+                if (e.target === statusModal) hideStatusModal();
+            });
+
+
+            // --- Form Submission Handlers (UPDATED) ---
             
             // 1. Booking Form Submission
             bookingForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
+                e.preventDefault(); // STOP THE REDIRECT
                 
-                // reCAPTCHA check (Widget ID 0)
+                // reCAPTCHA check
                 const recaptchaResponse = grecaptcha.getResponse(0);
                 if (!recaptchaResponse) {
-                    alert("Please complete the reCAPTCHA verification to proceed.");
+                    showStatusModal('error', "Please complete the reCAPTCHA verification to proceed.");
                     return;
                 }
 
                 const data = calculateTotal();
                 if (!data.serviceName) {
-                    alert('Please select a Course or Activity to complete your booking.');
+                    showStatusModal('error', 'Please select a Course or Activity to complete your booking.');
                     return;
                 }
 
                 // Time check
                 const [h, m] = timeInput.value.split(':').map(Number);
                 if (m !== 0 && m !== 30) {
-                     alert('Booking failed: Please ensure your preferred time is exactly on the hour or half-hour (e.g., 10:00 or 10:30).');
+                     showStatusModal('error', 'Booking failed: Please ensure your preferred time is exactly on the hour or half-hour (e.g., 10:00 or 10:30).');
                      return;
                 }
                 
@@ -810,16 +890,16 @@
                     const result = await response.json();
 
                     if (result.success) {
-                         alert(`Booking request Sent! You are booking ${data.people} people for ${data.sessions} session(s) of ${data.serviceName}. We will email you shortly to confirm.`);
+                         showStatusModal('success', `Booking request Sent! You are booking ${data.people} people for ${data.sessions} session(s) of ${data.serviceName}. We will email you shortly to confirm.`);
                          bookingForm.reset();
                          calculateTotal();
                          grecaptcha.reset(0);
                     } else {
-                        alert("Error sending booking: " + result.message);
+                        showStatusModal('error', "Error sending booking: " + result.message);
                     }
                 } catch (error) {
                     console.error('Error:', error);
-                    alert("An error occurred while sending your booking. Please try again or call us.");
+                    showStatusModal('error', "An error occurred while sending your booking. Please try again or call us.");
                 } finally {
                     submitBookingBtn.innerText = originalBtnText;
                     submitBookingBtn.disabled = false;
@@ -828,12 +908,12 @@
 
             // 2. General Form Submission
             generalForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
+                e.preventDefault(); // STOP THE REDIRECT
                 
-                // reCAPTCHA check (Widget ID 1 because it's the second one on page)
+                // reCAPTCHA check
                 const recaptchaResponse = grecaptcha.getResponse(1);
                 if (!recaptchaResponse) {
-                    alert("Please complete the reCAPTCHA verification to proceed.");
+                    showStatusModal('error', "Please complete the reCAPTCHA verification to proceed.");
                     return;
                 }
 
@@ -853,15 +933,15 @@
                     const result = await response.json();
 
                     if (result.success) {
-                        alert("Message sent successfully! We will get back to you shortly.");
+                        showStatusModal('success', "Message sent successfully! We will get back to you shortly.");
                         generalForm.reset();
                         grecaptcha.reset(1);
                     } else {
-                        alert("Error sending message: " + result.message);
+                        showStatusModal('error', "Error sending message: " + result.message);
                     }
                 } catch (error) {
                     console.error('Error:', error);
-                    alert("An error occurred. Please try again later.");
+                    showStatusModal('error', "An error occurred. Please try again later.");
                 } finally {
                     submitGeneralBtn.innerText = originalBtnText;
                     submitGeneralBtn.disabled = false;
