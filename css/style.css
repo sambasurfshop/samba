@@ -375,15 +375,7 @@ body {
   color: hsl(var(--foreground));
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
-  font-weight: 700;
-}
+
 .container {
   width: 100%;
   margin-right: auto;
@@ -4378,9 +4370,11 @@ h6 {
 
 h1 , h2 {
       font-family: summer85;
-      
 }
 
+h2 {
+  color: #a75413;
+}
 
 .carousel-nav-btn {
             position: absolute;

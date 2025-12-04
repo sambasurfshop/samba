@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samba : Surf school shop</title>
+    <title>Samba Surf shop | Home </title>
     <meta name="description" content="Experience the perfect blend of surf culture and modern art. Professional surf lessons, eco-friendly boards, and artistic surf lifestyle.">
     <meta name="author" content="Surf Art Studio">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/fav/samba-fav-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/fav/samba-fav-16x16.png">
 
-    <!-- Apple iOS icon (MUST be PNG — use 192x192 or 180x180) -->
+    <!-- Apple iOS icon (MUST be PNG  use 192x192 or 180x180) -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/fav/samba-fav-192x192.png">
     <!-- Android/Chrome icons via manifest -->
     <link rel="manifest" href="images/fav/site.webmanifest">
@@ -60,6 +60,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- MotionPathPlugin for animating along an SVG path -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    
+    <style>
+        /* Custom Hover Animation for Background Images */
+        .gallery-item {
+            transition: transform 0.4s ease, filter 0.3s ease;
+        }
+        /* Zoom effect on hover */
+        .gallery-item:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+        }
+        
+        /* Hide scrollbar when modal is open */
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        /* Lightbox transition */
+        #lightbox {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        #lightbox.hidden-modal {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        #lightbox.visible-modal {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+    </style>
 
 
 
@@ -110,12 +142,12 @@
                         <a href="index.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Home</a>
                         <a href="about.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">About Us</a>
 
-                        <!-- == Services Dropdown (Full Width) == -->
+                        <!-- == Surf Packages Dropdown (Full Width) == -->
                         <div class="group">
                             <!-- UPDATED: Removed 'relative' -->
                             <button class="flex items-center gap-1 text-sm font-medium hover:text-[#bf5300]">
                                 <!-- UPDATED: Color -->
-                                <a href="services.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Services</a>
+                                <a href="surf-packages.html" class="nav-link-animate text-sm font-medium hover:text-[#bf5300]">Surf Packages</a>
                                 <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
@@ -131,7 +163,7 @@
                                     <div class="flex p-8 max-w-7xl mx-auto">
                                         <!-- Part 1: 33% -->
                                         <div class="w-1/3 flex-shrink-0 pr-8">
-                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Services</h3>
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Surf Packages</h3>
                                             <!-- UPDATED: Color -->
                                             <p class="text-sm text-gray-600">Catch the waves with us! From beginner lessons to private coaching and guided surf adventures, we have the perfect session for everyone.</p>
                                         </div>
@@ -149,9 +181,9 @@
                                         <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
                                             <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
                                             <!-- UPDATED: Color -->
-                                            <a href="services.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                            <a href="surf-packages.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
                                                 <!-- UPDATED: Color -->
-                                                Show All Services
+                                                Show All Surf Packages
                                             </a>
                                         </div>
                                     </div>
@@ -182,7 +214,7 @@
                                         <div class="w-1/3 flex-shrink-0 pr-8">
                                             <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Activities</h3>
                                             <!-- UPDATED: Color -->
-                                            <p class="text-sm text-gray-600">From epic surf sessions to trips in Paradise Valley, dune adventures, and surf-skate fun — we bring unforgettable experiences to every day.</p>
+                                            <p class="text-sm text-gray-600">From epic surf sessions to trips in Paradise Valley, dune adventures, and surf-skate fun  we bring unforgettable experiences to every day.</p>
                                         </div>
 
                                         <!-- Part 2: 33% (The List) -->
@@ -270,11 +302,11 @@
                         <a href="index.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Home</a>
                         <a href="about.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">About Us</a>
 
-                        <!-- == Services Dropdown (Full Width) == -->
+                        <!-- == Surf Packages Dropdown (Full Width) == -->
                         <div class="group">
                             <!-- UPDATED: Removed 'relative' -->
                             <button class="flex items-center gap-1 text-sm font-medium hover:text-gray-200">
-                                <a href="services.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Serices</a>
+                                <a href="surf-packages.html" class="nav-link-animate text-sm font-medium hover:text-gray-200">Surf Packages</a>
                                 <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
@@ -290,7 +322,7 @@
                                     <div class="flex p-8 max-w-7xl mx-auto">
                                         <!-- Part 1: 33% -->
                                         <div class="w-1/3 flex-shrink-0 pr-8">
-                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Services</h3>
+                                            <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Surf Packages</h3>
                                             <!-- UPDATED: Color -->
                                             <p class="text-sm text-gray-600">Catch the waves with us! From beginner lessons to private coaching and guided surf adventures, we have the perfect session for everyone.</p>
                                         </div>
@@ -308,9 +340,9 @@
                                         <div class="w-1/3 flex-shrink-0 pl-8 flex flex-col items-center justify-center">
                                             <img src="images/samba-logo.png" alt="SAMBA SURF SHOP LOGO" class="h-12 w-auto object-contain mb-6">
                                             <!-- UPDATED: Color -->
-                                            <a href="#" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
+                                            <a href="surf-packages.html" class="inline-block bg-[#bf5300] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#a64900] transition-colors">
                                                 <!-- UPDATED: Color -->
-                                                Show All Services
+                                                Show All Surf Packages
                                             </a>
                                         </div>
                                     </div>
@@ -340,7 +372,7 @@
                                         <div class="w-1/3 flex-shrink-0 pr-8">
                                             <h3 class="text-lg font-semibold mb-2 text-[#bf5300]">Our Activities</h3>
                                             <!-- UPDATED: Color -->
-                                            <p class="text-sm text-gray-600">From epic surf sessions to trips in Paradise Valley, dune adventures, and surf-skate fun — we bring unforgettable experiences to every day.</p>
+                                            <p class="text-sm text-gray-600">From epic surf sessions to trips in Paradise Valley, dune adventures, and surf-skate fun  we bring unforgettable experiences to every day.</p>
                                         </div>
 
                                         <!-- Part 2: 33% (The List) -->
@@ -413,10 +445,10 @@
                 <a href="index.html" class="mobile-menu-link text-white text-2xl font-semibold">Home</a>
                 <a href="about.html" class="mobile-menu-link text-white text-2xl font-semibold">About Us</a>
 
-                <!-- Mobile Services Dropdown -->
+                <!-- Mobile Surf Packages Dropdown -->
                 <div class="text-center">
                     <button class="mobile-dropdown-toggle text-white text-2xl font-semibold flex items-center gap-2">
-                        <a href="services.html" class="mobile-menu-link text-white text-2xl font-semibold">Services</a>
+                        <a href="surf-packages.html" class="mobile-menu-link text-white text-2xl font-semibold">Surf Packages</a>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
@@ -529,11 +561,10 @@
                             <div class="rounded-lg border text-card-foreground hover-lift bg-card border-none shadow-lg">
                                 <div class="p-8 text-center">
                                     <div class="flex justify-center mb-6 animate-float">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-12 h-12 text-primary">
-                                            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
-                                            <path d="M22 10v6"></path>
-                                            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
-                                        </svg>
+                                        <img src="images/icons/icon-1.svg" 
+                                            alt="Icon"
+                                            class="w-12 h-12 text-primary" />
+
                                     </div>
                                     <h3 class="text-xl font-bold mb-3">Samba Energy</h3>
                                     <p class="text-muted-foreground">Surf lessons powered by joy, rhythm, and the fun spirit of the Samba lifestyle.</p>
@@ -542,25 +573,22 @@
                             <div class="rounded-lg border text-card-foreground hover-lift bg-card border-none shadow-lg">
                                 <div class="p-8 text-center">
                                     <div class="flex justify-center mb-6 animate-float">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf w-12 h-12 text-primary">
-                                            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
-                                            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
-                                        </svg>
+                                        <img src="images/icons/icon-2.svg" 
+                                            alt="Icon"
+                                            class="w-12 h-12 text-primary" />
+
                                     </div>
                                     <h3 class="text-xl font-bold mb-3">Beginner-Friendly Approach</h3>
-                                    <p class="text-muted-foreground">We make learning easy, safe, and exciting — no pressure, just wave after wave.</p>
+                                    <p class="text-muted-foreground">We make learning easy, safe, and exciting  no pressure, just wave after wave.</p>
                                 </div>
                             </div>
                             <div class="rounded-lg border text-card-foreground hover-lift bg-card border-none shadow-lg">
                                 <div class="p-8 text-center">
                                     <div class="flex justify-center mb-6 animate-float">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette w-12 h-12 text-primary">
-                                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
-                                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
-                                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
-                                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
-                                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
-                                        </svg>
+                                        <img src="images/icons/icon-3.svg" 
+                                            alt="Icon"
+                                            class="w-12 h-12 text-primary" />
+
                                     </div>
                                     <h3 class="text-xl font-bold mb-3">Good Vibes Guaranteed</h3>
                                     <p class="text-muted-foreground">Every session is filled with smiles, motivation, and memories you’ll take home forever.</p>
@@ -569,10 +597,10 @@
                             <div class="rounded-lg border text-card-foreground hover-lift bg-card border-none shadow-lg">
                                 <div class="p-8 text-center">
                                     <div class="flex justify-center mb-6 animate-float">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-12 h-12 text-primary">
-                                            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                                            <circle cx="12" cy="10" r="3"></circle>
-                                        </svg>
+                                        <img src="images/icons/icon-6.svg" 
+                                            alt="Icon"
+                                            class="w-12 h-12 text-primary" />
+
                                     </div>
                                     <h3 class="text-xl font-bold mb-3">Ocean Experts</h3>
                                     <p class="text-muted-foreground">Local knowledge helps you ride the best waves at the best times.</p>
@@ -639,9 +667,12 @@
                                         <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
                                             <div class="course-one__single max-w-sm mx-auto relative z-10 rounded-[30px] shadow-lg">
                                                 <div class="course-one__image relative">
-                                                    <a href="courses/open-group-session.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">Advanced</a>
+                                                    <a href="courses/open-group-session.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">30% OFF</a>
                                                     <div class="course-one__image-inner relative overflow-hidden bg-gray-900 rounded-t-[30px] z-10">
-                                                        <img src="https://maghrebwaves.com/assets/images/courses/course-1-1.jpg" alt="Image 1" onerror="this.src='https://placehold.co/600x400/1f2937/ffc400?text=Image+1'" class="w-full h-auto">
+                                                        <img src="images/open-group-session/2.webp" 
+                                                            alt="Image 1"
+                                                            class="w-full h-[265px] object-cover">
+
                                                         <a href="courses/open-group-session.html" class="w-[65px] h-[65px] flex items-center justify-center text-xl absolute text-[var(--thm-black)] bg-[var(--thm-primary)] opacity-0" style="top: calc(50% - 70.5px); left: calc(50% - 32.5px);">+</a>
                                                     </div>
                                                 </div>
@@ -649,7 +680,7 @@
                                                     <span class="course-number">01</span>
                                                     <h3 class="mt-0 pt-[53px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]">
                                                         <a href="courses/open-group-session.html" class="transition-colors duration-500">Open Group Session</a></h3>
-                                                    <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3">Join the vibe, meet new people, and enjoy a fun introduction to surfing.</p>
+                                                    <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3 font-sans">Join the vibe, meet new people, and enjoy a fun introduction to surfing.</p>
                                                     <img class="course-icon" src="images/11923-600x600.svg" alt="Wave Icon">
                                                 </div>
                                                 <a href="courses/open-group-session.html" class="course-one__book-link w-full flex items-center justify-center bg-[var(--thm-primary)] text-[var(--thm-black)] text-lg font-bold uppercase py-5">More infos</a>
@@ -660,16 +691,19 @@
                                         <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
                                             <div class="course-one__single max-w-sm mx-auto relative z-10 rounded-[30px] shadow-lg">
                                                 <div class="course-one__image relative">
-                                                    <a href="courses/private-surf-coaching.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">Advanced</a>
+                                                    <a href="courses/private-surf-coaching.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">30% OFF</a>
                                                     <div class="course-one__image-inner relative overflow-hidden bg-gray-900 rounded-t-[30px] z-10">
-                                                        <img src="https://maghrebwaves.com/assets/images/courses/course-1-2.jpg" alt="Image 2" onerror="this.src='https://placehold.co/600x400/1f2937/ffc400?text=Image+2'" class="w-full h-auto">
+                                                        <img src="images/open-group-session/22.webp" 
+                                                            alt="Image 1"
+                                                            class="w-full h-[265px] object-cover object-[25%_50%]">
+
                                                         <a href="courses/private-surf-coaching.html" class="w-[65px] h-[65px] flex items-center justify-center text-xl absolute text-[var(--thm-black)] bg-[var(--thm-primary)] opacity-0" style="top: calc(50% - 70.5px); left: calc(50% - 32.5px);">+</a>
                                                     </div>
                                                 </div>
                                                 <div class="course-one__content hvr-sweep-to-bottom bg-[#edf2f5] w-full text-center relative rounded-b-[30px]" style="height: 250px;">
                                                     <span class="course-number">02</span>
                                                     <h3 class="mt-0 pt-[53px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]"><a href="courses/private-surf-coaching.html" class="transition-colors duration-500">Private Surf Coaching</a></h3>
-                                                    <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3">One coach. One student. Maximum progression in minimum time.</p>
+                                                    <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3 font-sans">One coach. One student. Maximum progression in minimum time.</p>
                                                     <img class="course-icon" src="images/11923-600x600.svg" alt="Wave Icon">
                                                 </div>
                                                 <a href="courses/private-surf-coaching.html" class="course-one__book-link w-full flex items-center justify-center bg-[var(--thm-primary)] text-[var(--thm-black)] text-lg font-bold uppercase py-5">More infos</a>
@@ -680,16 +714,19 @@
                                         <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
                                             <div class="course-one__single max-w-sm mx-auto relative z-10 rounded-[30px] shadow-lg">
                                                 <div class="course-one__image relative">
-                                                    <a href="courses/private-group-surf.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">Advanced</a>
+                                                    <a href="courses/private-group-surf.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">30% OFF</a>
                                                     <div class="course-one__image-inner relative overflow-hidden bg-gray-900 rounded-t-[30px] z-10">
-                                                        <img src="https://maghrebwaves.com/assets/images/courses/course-1-3.jpg" alt="Image 3" onerror="this.src='https://placehold.co/600x400/1f2937/ffc400?text=Image+3'" class="w-full h-auto">
+                                                        <img src="images/open-group-session/1.webp" 
+                                                            alt="Image 1"
+                                                            class="w-full h-[265px] object-cover">
+
                                                         <a href="courses/private-group-surf.html" class="w-[65px] h-[65px] flex items-center justify-center text-xl absolute text-[var(--thm-black)] bg-[var(--thm-primary)] opacity-0" style="top: calc(50% - 70.5px); left: calc(50% - 32.5px);">+</a>
                                                     </div>
                                                 </div>
                                                 <div class="course-one__content hvr-sweep-to-bottom bg-[#edf2f5] w-full text-center relative rounded-b-[30px]" style="height: 250px;">
                                                     <span class="course-number">03</span>
                                                     <h3 class="mt-0 pt-[53px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]"><a href="courses/private-group-surf.html" class="transition-colors duration-500">Private Group Surf</a></h3>
-                                                    <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3">Perfect for couples, families, or friends who want to learn together.</p>
+                                                    <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3 font-sans">Perfect for couples, families, or friends who want to learn together.</p>
                                                     <img class="course-icon" src="images/11923-600x600.svg" alt="Wave Icon">
                                                 </div>
                                                 <a href="courses/private-group-surf.html" class="course-one__book-link w-full flex items-center justify-center bg-[var(--thm-primary)] text-[var(--thm-black)] text-lg font-bold uppercase py-5">Book now</a>
@@ -721,7 +758,7 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div class="order-2 lg:order-1">
                                 <h2 class="text-4xl md:text-5xl font-bold mb-6">samba surf story</h2>
-                                <p class="text-lg text-muted-foreground mb-6">Samba Surf Shop was created from a love for the ocean and the joy of sharing unforgettable surf moments. For us, surfing is more than a sport — it’s a feeling, a lifestyle, and a way to connect with people from all around
+                                <p class="text-lg text-muted-foreground mb-6">Samba Surf Shop was created from a love for the ocean and the joy of sharing unforgettable surf moments. For us, surfing is more than a sport  it’s a feeling, a lifestyle, and a way to connect with people from all around
                                     the world.</p>
                                 <p class="text-lg text-muted-foreground mb-6">Our team of passionate surfers and instructors is dedicated to helping everyone catch their first wave, improve their skills, and enjoy the beauty of the beach.</p>
                                 <p class="text-lg text-muted-foreground mb-8">We welcome beginners, travelers, and advanced surfers with the same warm Samba energy.</p>
@@ -738,15 +775,14 @@
                 </section>
 
                 <section class="relative py-32 overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-600">
-                        <div class="absolute inset-0 opacity-30">
-                            <svg class="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" class="fill-white animate-wave"
-                                opacity="0.5"></path>
-                            </svg>
-                        </div>
-                        <div class="absolute inset-0 bg-foreground/40"></div>
-                    </div>
+                    <video 
+                        src="images/video.mp4" 
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline
+                        class="absolute inset-0 w-full h-full object-cover brightness-75">
+                    </video>
                     <div class="relative z-10 container mx-auto px-4 text-center">
                         <div class="max-w-3xl mx-auto">
                             <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
@@ -782,7 +818,7 @@
                                         </div>
                                         <div>
                                             <h3 class="font-bold mb-1">Consistent Waves</h3>
-                                            <p class="text-sm text-muted-foreground">Enjoy reliable swells and surf-friendly conditions throughout the year — perfect for every level.</p>
+                                            <p class="text-sm text-muted-foreground">Enjoy reliable swells and surf-friendly conditions throughout the year  perfect for every level.</p>
                                         </div>
                                     </div>
                                     <div class="flex gap-4">
@@ -878,7 +914,7 @@
            - overflow-hidden: Hides slides that are off-screen
            - py-24: Generous vertical padding to prevent hover effects (translateY) from being clipped
         -->
-                            <div class="overflow-hidden py-24">
+                            <div class="overflow-hidden pb-24">
                                 <!-- 
                 TRACK
                 - flex: Arranges items in a row
@@ -900,16 +936,19 @@
                                     <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
                                         <div class="course-one__single max-w-sm mx-auto relative z-10 rounded-[30px] shadow-lg">
                                             <div class="course-one__image relative">
-                                                <a href="activities/paradise-valley.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">Advanced</a>
+                                                <a href="activities/paradise-valley.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">30% off</a>
                                                 <div class="course-one__image-inner relative overflow-hidden bg-gray-900 rounded-t-[30px] z-10">
-                                                    <img src="https://maghrebwaves.com/assets/images/courses/course-1-1.jpg" alt="Image 1" onerror="this.src='https://placehold.co/600x400/1f2937/ffc400?text=Image+1'" class="w-full h-auto">
+                                                    <img src="images/paradise-valley/1.webp" 
+                                                        alt="Image 1"
+                                                        class="w-full h-[265px] object-cover">
+
                                                     <a href="activities/paradise-valley.html" class="w-[65px] h-[65px] flex items-center justify-center text-xl absolute text-[var(--thm-black)] bg-[var(--thm-primary)] opacity-0" style="top: calc(50% - 70.5px); left: calc(50% - 32.5px);">+</a>
                                                 </div>
                                             </div>
                                             <div class="course-one__content hvr-sweep-to-bottom bg-[#edf2f5] w-full text-center relative rounded-b-[30px]" style="height: 250px;">
                                                 <span class="course-number">01</span>
-                                                <h3 class="mt-0 pt-[53px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]"><a href="activities/paradise-valley.html" class="transition-colors duration-500">Paradise Valley</a></h3>
-                                                <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3">Discover the stunning natural pools and peaceful landscapes of Paradise Valley—perfect for relaxing, exploring, and connecting with nature.</p>
+                                                <h3 class="mt-0 pt-[30px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]"><a href="activities/paradise-valley.html" class="transition-colors duration-500">Paradise Valley</a></h3>
+                                                <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3 font-[cursive] leading-[1.3]">Discover the stunning natural pools and peaceful landscapes of Paradise Valleyperfect for relaxing, exploring, and connecting with nature.</p>
                                                 <img class="course-icon" src="images/11923-600x600.svg" alt="Wave Icon">
                                             </div>
                                             <a href="activities/paradise-valley.html" class="course-one__book-link w-full flex items-center justify-center bg-[var(--thm-primary)] text-[var(--thm-black)] text-lg font-bold uppercase py-5">More infos</a>
@@ -920,16 +959,19 @@
                                     <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
                                         <div class="course-one__single max-w-sm mx-auto relative z-10 rounded-[30px] shadow-lg">
                                             <div class="course-one__image relative">
-                                                <a href="activities/sand-dunes.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">Advanced</a>
+                                                <a href="activities/sand-dunes.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">30% Off</a>
                                                 <div class="course-one__image-inner relative overflow-hidden bg-gray-900 rounded-t-[30px] z-10">
-                                                    <img src="https://maghrebwaves.com/assets/images/courses/course-1-2.jpg" alt="Image 2" onerror="this.src='https://placehold.co/600x400/1f2937/ffc400?text=Image+2'" class="w-full h-auto">
+                                                    <img src="images/sand-dunes/9.webp" 
+                                                        alt="Image 1"
+                                                        class="w-full h-[265px] object-cover">
+
                                                     <a href="activities/sand-dunes.html" class="w-[65px] h-[65px] flex items-center justify-center text-xl absolute text-[var(--thm-black)] bg-[var(--thm-primary)] opacity-0" style="top: calc(50% - 70.5px); left: calc(50% - 32.5px);">+</a>
                                                 </div>
                                             </div>
                                             <div class="course-one__content hvr-sweep-to-bottom bg-[#edf2f5] w-full text-center relative rounded-b-[30px]" style="height: 250px;">
                                                 <span class="course-number">02</span>
-                                                <h3 class="mt-0 pt-[53px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]"><a href="activities/sand-dunes.html" class="transition-colors duration-500">sand dunes</a></h3>
-                                                <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3">Ride the rolling dunes and enjoy the thrill of sandboarding in a unique desert adventure.</p>
+                                                <h3 class="mt-0 pt-[30px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]"><a href="activities/sand-dunes.html" class="transition-colors duration-500">sand dunes</a></h3>
+                                                <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3 font-[cursive] leading-[1.3]">Ride the rolling dunes and enjoy the thrill of sandboarding in a unique desert adventure.</p>
                                                 <img class="course-icon" src="images/11923-600x600.svg" alt="Wave Icon">
                                             </div>
                                             <a href="activities/sand-dunes.html" class="course-one__book-link w-full flex items-center justify-center bg-[var(--thm-primary)] text-[var(--thm-black)] text-lg font-bold uppercase py-5">More infos</a>
@@ -940,16 +982,19 @@
                                     <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
                                         <div class="course-one__single max-w-sm mx-auto relative z-10 rounded-[30px] shadow-lg">
                                             <div class="course-one__image relative">
-                                                <a href="activities/surf-skate.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">Advanced</a>
+                                                <a href="activities/surf-skate.html" class="course-one__cat text-[var(--thm-black)] bg-[var(--thm-primary)] text-sm font-semibold uppercase flex items-center justify-center h-10 px-6 whitespace-nowrap">30% off</a>
                                                 <div class="course-one__image-inner relative overflow-hidden bg-gray-900 rounded-t-[30px] z-10">
-                                                    <img src="https://maghrebwaves.com/assets/images/courses/course-1-3.jpg" alt="Image 3" onerror="this.src='https://placehold.co/600x400/1f2937/ffc400?text=Image+3'" class="w-full h-auto">
+                                                    <img src="images/surf-skate/1.webp" 
+                                                        alt="Image 1"
+                                                        class="w-full h-[265px] object-cover">
+
                                                     <a href="activities/surf-skate.html" class="w-[65px] h-[65px] flex items-center justify-center text-xl absolute text-[var(--thm-black)] bg-[var(--thm-primary)] opacity-0" style="top: calc(50% - 70.5px); left: calc(50% - 32.5px);">+</a>
                                                 </div>
                                             </div>
                                             <div class="course-one__content hvr-sweep-to-bottom bg-[#edf2f5] w-full text-center relative rounded-b-[30px]" style="height: 250px;">
                                                 <span class="course-number">03</span>
-                                                <h3 class="mt-0 pt-[53px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]"><a href="activities/surf-skate.html" class="transition-colors duration-500">surfskate</a></h3>
-                                                <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3">Join our surfskate lessons at Taghazout Skatepark and have fun while improving your skills.</p>
+                                                <h3 class="mt-0 pt-[30px] mb-6 uppercase text-2xl font-bold text-[var(--thm-base)]"><a href="activities/surf-skate.html" class="transition-colors duration-500">surfskate</a></h3>
+                                                <p class="mx-auto transition-colors duration-500 text-gray-600 w-2/3 font-[cursive] leading-[1.3]">Join our surfskate lessons at Taghazout Skatepark and have fun while improving your skills.</p>
                                                 <img class="course-icon" src="images/11923-600x600.svg" alt="Wave Icon">
                                             </div>
                                             <a href="activities/surf-skate.html" class="course-one__book-link w-full flex items-center justify-center bg-[var(--thm-primary)] text-[var(--thm-black)] text-lg font-bold uppercase py-5">More infos</a>
@@ -1002,7 +1047,7 @@
                                     </svg>
                                 </div>
                                 <h3 class="text-xl font-bold mb-3">Quality & Safety First</h3>
-                                <p class="text-muted-foreground">Our experienced instructors focus on safety, progress, and fun — giving you the best possible surf experience at every level.</p>
+                                <p class="text-muted-foreground">Our experienced instructors focus on safety, progress, and fun  giving you the best possible surf experience at every level.</p>
                             </div>
                             <div class="bg-card p-8 rounded-2xl shadow-lg hover-lift">
                                 <div class="text-primary mb-4">
@@ -1020,32 +1065,210 @@
                 </section>
 
 
-                <section id="gallery" class="py-20 bg-secondary mb-4">
+                <section id="gallery" class="py-20 mb-4">
+        <div class="container mx-auto px-4">
 
-                    <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 ">Gallery</h2>
+                <p class="text-xl text-slate-500 max-w-2xl mx-auto">Moments captured from our surf adventures and artistic journey.</p>
+            </div>
 
-                        <div class="text-center mb-16">
-                            <h2 class="text-4xl md:text-5xl font-bold mb-4">Gallery</h2>
-                            <p class="text-xl text-muted-foreground max-w-2xl mx-auto">Moments captured from our surf adventures and artistic journey.</p>
-                        </div>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
-                            <div style="background-image: url(images/open-group-session/7.webp);background-position: center center;background-size: cover;" class="col-span-2 row-span-2 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-2xl hover-lift cursor-pointer overflow-hidden relative group">
-                            </div>
-                            <div style="background-image: url(images/open-group-session/22.webp);background-position: center center;background-size: cover;" class="col-span-1 row-span-1 bg-gradient-to-br from-orange-400 to-amber-300 rounded-2xl hover-lift cursor-pointer overflow-hidden relative group">
-                            </div>
-                            <div style="background-image: url(images/shop/3.webp);background-position: center center;background-size: cover;" class="col-span-1 row-span-1 bg-gradient-to-br from-teal-400 to-emerald-300 rounded-2xl hover-lift cursor-pointer overflow-hidden relative group">
-                            </div>
-                            <div style="background-image: url(images/open-group-session/20.webp);background-position: center center;background-size: cover;" class="col-span-1 row-span-2 bg-gradient-to-br from-rose-400 to-pink-300 rounded-2xl hover-lift cursor-pointer overflow-hidden relative group">
-                            </div>
-                            <div style="background-image: url(images/sand-dunes/1.webp);background-position: center center;background-size: cover;" class="col-span-1 row-span-1 bg-gradient-to-br from-indigo-400 to-blue-300 rounded-2xl hover-lift cursor-pointer overflow-hidden relative group">
-                            </div>
-                            <div style="background-image: url(images/open-group-session/2.webp);background-position: center bottom;background-size: cover;" class="col-span-2 row-span-1 bg-gradient-to-br from-amber-400 to-yellow-300 rounded-2xl hover-lift cursor-pointer overflow-hidden relative group">
-                            </div>
-                            <div style="background-image: url(images/sand-dunes/9.webp);background-position: center center;background-size: cover;" class="col-span-1 row-span-1 bg-gradient-to-br from-indigo-400 to-blue-300 rounded-2xl hover-lift cursor-pointer overflow-hidden relative group">
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <!-- Added 'gallery-grid' ID and 'gallery-item' class to each div for JS targeting -->
+            <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                
+                <!-- Image 1: Large (2x2) - Original: images/open-group-session/7.webp -->
+                <div style="background-image: url('images/open-group-session/7.webp'); background-position: center center; background-size: cover;" 
+                     class="gallery-item col-span-2 row-span-2 bg-gray-200 rounded-2xl cursor-pointer overflow-hidden relative shadow-md">
+                </div>
+
+                <!-- Image 2: Small (1x1) - Original: images/open-group-session/22.webp -->
+                <div style="background-image: url('images/open-group-session/22.webp'); background-position: center center; background-size: cover;" 
+                     class="gallery-item col-span-1 row-span-1 bg-gray-200 rounded-2xl cursor-pointer overflow-hidden relative shadow-md">
+                </div>
+
+                <!-- Image 3: Small (1x1) - Original: images/shop/3.webp -->
+                <div style="background-image: url('images/shop/3.webp'); background-position: center center; background-size: cover;" 
+                     class="gallery-item col-span-1 row-span-1 bg-gray-200 rounded-2xl cursor-pointer overflow-hidden relative shadow-md">
+                </div>
+
+                <!-- Image 4: Tall (1x2) - Original: images/open-group-session/20.webp -->
+                <div style="background-image: url('images/open-group-session/20.webp'); background-position: center center; background-size: cover;" 
+                     class="gallery-item col-span-1 row-span-2 bg-gray-200 rounded-2xl cursor-pointer overflow-hidden relative shadow-md">
+                </div>
+
+                <!-- Image 5: Small (1x1) - Original: images/sand-dunes/1.webp -->
+                <div style="background-image: url('images/sand-dunes/1.webp'); background-position: center center; background-size: cover;" 
+                     class="gallery-item col-span-1 row-span-1 bg-gray-200 rounded-2xl cursor-pointer overflow-hidden relative shadow-md">
+                </div>
+
+                <!-- Image 6: Wide (2x1) - Original: images/open-group-session/2.webp -->
+                <div style="background-image: url('images/open-group-session/2.webp'); background-position: center bottom; background-size: cover;" 
+                     class="gallery-item col-span-2 row-span-1 bg-gray-200 rounded-2xl cursor-pointer overflow-hidden relative shadow-md">
+                </div>
+
+                <!-- Image 7: Small (1x1) - Original: images/sand-dunes/9.webp -->
+                <div style="background-image: url('images/sand-dunes/9.webp'); background-position: center center; background-size: cover;" 
+                     class="gallery-item col-span-1 row-span-1 bg-gray-200 rounded-2xl cursor-pointer overflow-hidden relative shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL -->
+    <!-- Hidden by default, covers screen -->
+    <div id="lightbox" class="hidden-modal fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4">
+        
+        <!-- Close Button (Top Right) -->
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white hover:text-gray-300 z-[110] p-2 focus:outline-none transition-transform hover:scale-110">
+            <i class="fa-solid fa-xmark text-4xl"></i>
+        </button>
+
+        <!-- Previous Button (Left) -->
+        <button onclick="changeImage(-1)" class="absolute left-2 md:left-8 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-[110] p-4 focus:outline-none hidden md:block transition-transform hover:scale-110">
+            <i class="fa-solid fa-chevron-left text-5xl"></i>
+        </button>
+
+        <!-- Next Button (Right) -->
+        <button onclick="changeImage(1)" class="absolute right-2 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 z-[110] p-4 focus:outline-none hidden md:block transition-transform hover:scale-110">
+            <i class="fa-solid fa-chevron-right text-5xl"></i>
+        </button>
+
+        <!-- Main Image Container -->
+        <div class="relative w-full h-full flex items-center justify-center">
+            <img id="lightbox-img" src="" alt="Gallery Preview" 
+                 class="max-w-full max-h-[90vh] object-contain shadow-2xl rounded-sm select-none transition-transform duration-300">
+            
+            <!-- Mobile Navigation Overlay (Visible only on small screens) -->
+            <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-8 md:hidden z-[110]">
+                <button onclick="changeImage(-1)" class="p-3 bg-white/10 rounded-full backdrop-blur-md text-white border border-white/20">
+                    <i class="fa-solid fa-chevron-left text-2xl"></i>
+                </button>
+                <button onclick="changeImage(1)" class="p-3 bg-white/10 rounded-full backdrop-blur-md text-white border border-white/20">
+                    <i class="fa-solid fa-chevron-right text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Caption / Counter -->
+            <div class="absolute bottom-20 md:bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-sm font-medium tracking-wide bg-black/40 px-3 py-1 rounded-full">
+                <span id="current-index">1</span> / <span id="total-images">10</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Logic to Handle the Lightbox ---
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const currentIndexSpan = document.getElementById('current-index');
+        const totalImagesSpan = document.getElementById('total-images');
+        
+        // Select all items with class 'gallery-item'
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        let imageUrls = [];
+        let currentIndex = 0;
+
+        // 1. Extract URLs from background-image styles
+        galleryItems.forEach((item, index) => {
+            // Get the computed style to find the URL
+            const style = window.getComputedStyle(item);
+            let bgImage = style.backgroundImage;
+            
+            // Cleanup the URL string (removes 'url("' and '")')
+            // Handles quotes or no quotes in the url()
+            bgImage = bgImage.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+            
+            imageUrls.push(bgImage);
+
+            // Add click listener to open lightbox
+            item.addEventListener('click', () => {
+                openLightbox(index);
+            });
+        });
+
+        // Set total count text
+        totalImagesSpan.innerText = imageUrls.length;
+
+        // 2. Open Lightbox
+        function openLightbox(index) {
+            currentIndex = index;
+            updateImage();
+            lightbox.classList.remove('hidden-modal');
+            lightbox.classList.add('visible-modal');
+            document.body.classList.add('modal-open'); // Prevent background scrolling
+        }
+
+        // 3. Close Lightbox
+        function closeLightbox() {
+            lightbox.classList.remove('visible-modal');
+            lightbox.classList.add('hidden-modal');
+            document.body.classList.remove('modal-open');
+        }
+
+        // 4. Change Image (Next/Prev)
+        function changeImage(direction) {
+            currentIndex += direction;
+
+            // Loop logic (Circular navigation)
+            if (currentIndex >= imageUrls.length) {
+                currentIndex = 0;
+            } else if (currentIndex < 0) {
+                currentIndex = imageUrls.length - 1;
+            }
+            updateImage();
+        }
+
+        // Helper to update DOM
+        function updateImage() {
+            lightboxImg.src = imageUrls[currentIndex];
+            currentIndexSpan.innerText = currentIndex + 1;
+        }
+
+        // 5. Close on Background Click
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target.closest('.relative') === null && e.target !== lightboxImg) {
+               // If clicking the black background, close it.
+               // Logic: if target is lightbox OR target is not inside the image container
+               if(e.target.id === 'lightbox' || e.target.parentElement.id === 'lightbox') {
+                   closeLightbox();
+               }
+            }
+        });
+
+        // 6. Keyboard Navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('visible-modal')) return;
+
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') changeImage(1);
+            if (e.key === 'ArrowLeft') changeImage(-1);
+        });
+
+        // 7. Mobile Swipe Support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        lightbox.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        lightbox.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            // Threshold for swipe (50px)
+            if (touchEndX < touchStartX - 50) {
+                // Swiped Left -> Next Image
+                changeImage(1);
+            }
+            if (touchEndX > touchStartX + 50) {
+                // Swiped Right -> Prev Image
+                changeImage(-1);
+            }
+        }
+    </script>
                 <!-- 
       ============================================================
       TESTIMONIALS
@@ -1123,7 +1346,7 @@
                         </div>
                     </div>
                     <div class="relative z-10 container mx-auto px-4 text-center text-white" style="    transform: translatey(-40px);">
-                        <h2 class="text-4xl md:text-6xl font-bold mb-6">Join the Tribe</h2>
+                        <h2 class="text-4xl md:text-6xl font-bold mb-6 text-[#f5f5dc]">Join the Tribe</h2>
                         <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Ready to ride the waves and embrace the surf art lifestyle? Book your first lesson today and become part of our creative community.</p>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center">
                             <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-11 rounded-md bg-white text-primary hover:bg-gray-100 text-lg px-10 py-6">Book Your Surf Lesson</button>
@@ -1146,11 +1369,6 @@
                             <p class="text-gray-300 mb-6">Where the ocean meets creativity. Join us for an unforgettable surf experience.</p>
                             <div class="flex gap-4">
                                 <a href="#" class="hover:text-primary transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook w-6 h-6">
-                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a href="#" class="hover:text-primary transition-colors">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram w-6 h-6">
                                         <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -1158,8 +1376,8 @@
                                     </svg>
                                 </a>
                                 <a href="#" class="hover:text-primary transition-colors">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter w-6 h-6">
-                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 86" fill="currentColor" class="tripadvisor-logo w-6 h-6">
+                                        <path d="M44.508 49.657c0 6.436-5.218 11.654-11.653 11.654s-11.653-5.218-11.653-11.654c0-6.435 5.218-11.654 11.653-11.654s11.653 5.218 11.653 11.654m54.028-11.654c-6.435 0-11.653 5.218-11.653 11.654S92.1 61.311 98.536 61.311s11.653-5.218 11.653-11.654c-.002-6.432-5.215-11.647-11.647-11.65zm32.855 11.654c0 18.136-14.715 32.84-32.855 32.84a32.7 32.7 0 0 1-22.31-8.74L65.71 85.196 55.19 73.744a32.7 32.7 0 0 1-22.317 8.754C14.746 82.497.036 67.792.036 49.656a32.75 32.75 0 0 1 10.71-24.27L0 13.693h23.876c25.263-17.195 58.467-17.195 83.73 0h23.814l-10.745 11.692a32.75 32.75 0 0 1 10.716 24.271m-76.305 0c0-12.274-9.95-22.225-22.223-22.225S10.64 37.383 10.64 49.657s9.95 22.225 22.223 22.225 22.222-9.948 22.223-22.222zm35.284-33.18a64.13 64.13 0 0 0-49.326 0c14.03 5.37 24.667 17.915 24.667 32.54 0-14.624 10.635-27.17 24.66-32.538zm30.395 33.18c0-12.274-9.95-22.225-22.223-22.225s-22.223 9.95-22.223 22.224S86.268 71.88 98.54 71.88s22.223-9.95 22.223-22.225"/>
                                     </svg>
                                 </a>
                             </div>
@@ -1168,7 +1386,7 @@
                             <h4 class="text-lg font-bold mb-4">Quick Links</h4>
                             <ul class="space-y-2">
                                 <li><a href="about.html" class="text-gray-300 hover:text-primary transition-colors">About Us</a></li>
-                                <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Our Services</a></li>
+                                <li><a href="surf-packages.html" class="text-gray-300 hover:text-primary transition-colors">Our Surf Packages</a></li>
                                 <li><a href="activities.html" class="text-gray-300 hover:text-primary transition-colors">Activities</a></li>
                                 <li><a href="gallery.html" class="text-gray-300 hover:text-primary transition-colors">Gallery</a></li>
                                 <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
