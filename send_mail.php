@@ -6,13 +6,14 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
 
 // --- CONFIGURATION ---
 // TODO: Replace with your actual ReCAPTCHA Secret Key
 $recaptcha_secret = "6LdfMSEsAAAAAOPQAzU7L6DmosWN_rJH2yJtXEdY"; 
-$recipient_email = "sambasurfshop@gmail.com";
-$from_email = "noreply@sambasurfshop.com"; // Change this to a domain you own if possible
+$recipient_email = "youness@sambasurfshop.com";
+$from_email = "youness@sambasurfshop.com"; // Change this to a domain you own if possible
 $company_name = "Samba Surf Shop";
 
 // --- RECAPTCHA VERIFICATION ---

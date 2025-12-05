@@ -1,0 +1,21 @@
+{
+  "name": "Samba Surf Shop and School",
+  "short_name": "Samba",
+  "description": "Samba Surf Shop and School in Taghazout.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f0f5d5",
+  "theme_color": "#bf5300",
+  "icons": [
+    {
+      "src": "/images/fav/samba-fav-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/fav/samba-fav-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
