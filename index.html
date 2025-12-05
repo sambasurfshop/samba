@@ -40,7 +40,7 @@
     <!-- Android/Chrome icons via manifest -->
     <link rel="manifest" href="images/fav/site.webmanifest">
     
-
+    <link rel="preload" as="image" href="assets/here-surfers-samba-1.webp">
 
     <!-- Load Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -783,7 +783,8 @@
                         src="images/video.mp4" 
                         autoplay 
                         loop 
-                        muted 
+                        muted
+                        preload="none" 
                         playsinline
                         class="absolute inset-0 w-full h-full object-cover brightness-75">
                     </video>
@@ -1501,8 +1502,7 @@
     </div>
 
 
-    <script src="js/animation.js"></script>
-    <script src="js/header.js"></script>
+    <script defer src="js/animation.js"></script>
 </body>
 
 </html>
