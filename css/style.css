@@ -118,23 +118,7 @@
 :after {
   --tw-content: "";
 }
-html,
-:host {
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
-  font-feature-settings: normal;
-  font-variation-settings: normal;
-  -webkit-tap-highlight-color: transparent;
-}
-body {
-  margin: 0;
-  line-height: inherit;
-}
+
 hr {
   height: 0;
   color: inherit;
@@ -3545,6 +3529,9 @@ body {
       width: 100%;
       background-color: #f0f5d5; /* Added a light page background */
       scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevents left/right scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    overscroll-behavior-y: none;
 
     }
   
@@ -3999,7 +3986,6 @@ body {
       max-width: 1200px;
       margin: 0 auto;
       width: 100%;
-      padding-top: 70px;
       padding-bottom: 70px;
     }
 
@@ -4536,3 +4522,11 @@ h2 {
         }
 
         
+/* FIX: iOS Safari Background-Attachment Bug */
+@media (pointer: coarse) {
+    /* Target elements using background-attachment: fixed that cause issues on touch devices */
+    .BackgroundHero {
+        /* Force the background to scroll with the page, resolving the rendering bug */
+        background-attachment: scroll !important;
+    }
+}
