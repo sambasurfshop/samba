@@ -24,7 +24,8 @@
     <!-- Android/Chrome icons via manifest -->
     <link rel="manifest" href="../images/fav/site.webmanifest">
     
-    
+    <script defer src="https://kit.fontawesome.com/a9f1589d69.js" crossorigin="anonymous"></script>
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -814,67 +815,88 @@
         </div>
     </main>
 
-    <!-- 
-      ============================================================
-      TESTIMONIALS
-      ============================================================
-    -->
-    <section id="reviews" class="bg-gray-900 text-white py-20 relative overflow-hidden">
-        <!-- Decoration -->
-        <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
-
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-2">What Our Adventurers Say</h2>
-                <p class="text-gray-400">Over 100 happy clients loved their surf, trips, sand dunes, and surfskate experiences!</p>
+    <!-- ============================================
+         REVIEWS SECTION (REDESIGNED)
+         ============================================ -->
+<section id="reviews" class="relative bg-white pt-24 pb-32 overflow-hidden">
+    <div class="container mx-auto px-4 relative z-10">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <span class="text-[#bf5300] font-bold tracking-wider uppercase text-sm mb-2 block">Testimonials</span>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">What Our Adventurers Say</h2>
+            <div class="w-20 h-1.5 bg-[#bf5300] mx-auto rounded-full mt-4"></div>
+            <p class="text-gray-500 mt-4 text-lg">Over 100 happy clients loved their surf, trips, sand dunes, and surfskate experiences!</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Review Card 1 -->
+            <div class="bg-gray-50 p-8 rounded-tr-3xl rounded-bl-3xl border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 relative">
+                <!-- Quote Icon -->
+                <div class="absolute -top-4 -right-4 bg-[#bf5300] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                
+                <div class="flex text-[#bf5300] mb-4 text-sm">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                
+                <p class="text-gray-600 italic mb-8 leading-relaxed">"Really good experience! We were very beginner and our instructor was very patient and helpful with very clear instruction and super attentive!! Would highly recommend anyone learning to surf in his little nervous about it!!"</p>
+                
+                <div class="flex items-center gap-4 mt-auto border-t border-gray-200 pt-6">
+                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center font-bold text-[#bf5300] text-lg border-2 border-white shadow-sm">KM</div>
+                    <div>
+                        <p class="font-bold text-gray-900">Kaitlin Mason</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wide">Surfer</p>
+                    </div>
+                </div>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-6">
-                <!-- Review Card -->
-                <div class="bg-gray-800/50 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-primary/50 transition-colors">
-                    <div class="text-[#bf5300] mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="quote" class="lucide lucide-quote w-8 h-8 fill-current"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
-                    </div>
-                    <p class="text-gray-300 italic mb-6">"I was terrified of the ocean, but the instructors were so patient. I stood up on my second try! Highlight of my trip to Morocco."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold">JD</div>
-                        <div>
-                            <p class="font-bold text-sm">Sarah Jenkins</p>
-                            <p class="text-xs text-gray-500">London, UK</p>
-                        </div>
+
+            <!-- Review Card 2 (Featured) -->
+            <div class="bg-white p-8 rounded-tl-3xl rounded-br-3xl border-2 border-[#bf5300]/10 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 relative md:-mt-4">
+                 <!-- Quote Icon -->
+                 <div class="absolute -top-4 -right-4 bg-[#bf5300] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+
+                <div class="flex text-[#bf5300] mb-4 text-sm">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="text-gray-600 italic mb-8 leading-relaxed">"Amazing surf lesson! It’s my first time in Taghazout, and Younes did an incredible job. A huge thank you — you guys are simply the best!"</p>
+                
+                <div class="flex items-center gap-4 mt-auto border-t border-gray-100 pt-6">
+                    <div class="w-12 h-12 bg-[#eff4d7] rounded-full flex items-center justify-center font-bold text-[#bf5300] text-lg border-2 border-white shadow-sm">T</div>
+                    <div>
+                        <p class="font-bold text-gray-900">TimCor</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wide">Surfer</p>
                     </div>
                 </div>
-                <!-- Review Card -->
-                <div class="bg-gray-800/50 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-primary/50 transition-colors">
-                    <div class="text-[#bf5300] mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="quote" class="lucide lucide-quote w-8 h-8 fill-current"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
-                    </div>
-                    <p class="text-gray-300 italic mb-6">"I was terrified of the ocean, but the instructors were so patient. I stood up on my second try! Highlight of my trip to Morocco."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold">JD</div>
-                        <div>
-                            <p class="font-bold text-sm">Sarah Jenkins</p>
-                            <p class="text-xs text-gray-500">London, UK</p>
-                        </div>
-                    </div>
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="bg-gray-50 p-8 rounded-tr-3xl rounded-bl-3xl border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2 relative">
+                 <!-- Quote Icon -->
+                 <div class="absolute -top-4 -right-4 bg-[#bf5300] text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-quote-right"></i>
                 </div>
-                <!-- Review Card -->
-                <div class="bg-gray-800/50 backdrop-blur p-8 rounded-2xl border border-gray-700 hover:border-primary/50 transition-colors">
-                    <div class="text-[#bf5300] mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="quote" class="lucide lucide-quote w-8 h-8 fill-current"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path></svg>
-                    </div>
-                    <p class="text-gray-300 italic mb-6">"I was terrified of the ocean, but the instructors were so patient. I stood up on my second try! Highlight of my trip to Morocco."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center font-bold">JD</div>
-                        <div>
-                            <p class="font-bold text-sm">Sarah Jenkins</p>
-                            <p class="text-xs text-gray-500">London, UK</p>
-                        </div>
+
+                <div class="flex text-[#bf5300] mb-4 text-sm">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+
+                <p class="text-gray-600 italic mb-8 leading-relaxed">"This is one of the best shops in Taghazout! If you want to surf it’s one of the best places ever with the most patient instructors! Would recommend 10/10"</p>
+                
+                <div class="flex items-center gap-4 mt-auto border-t border-gray-200 pt-6">
+                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center font-bold text-[#bf5300] text-lg border-2 border-white shadow-sm">NM</div>
+                    <div>
+                        <p class="font-bold text-gray-900">Natasa Milanovic</p>
+                        <p class="text-xs text-gray-400 uppercase tracking-wide">Surfer</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- 
       ============================================================
