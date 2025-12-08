@@ -1072,6 +1072,187 @@
                     </div>
                 </section>
 
+                <section id="reels-section" class="py-20 bg-background overflow-hidden">
+    <div class="container mx-auto px-4">
+        
+        <div class="text-center mb-12">
+            <span class="text-[#bf5300] font-bold tracking-wider uppercase text-sm mb-2 block">Follow the Vibe</span>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Live from Taghazout</h2>
+            <p class="text-xl text-gray-500 max-w-2xl mx-auto">Catch the daily action and surf vibes on our feed.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            
+            <div class="reel-item relative group aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                <video 
+                    class="lazy-reel w-full h-full object-cover cursor-pointer" 
+                    playsinline 
+                    muted 
+                    loop 
+                    preload="none"
+                    data-src="images/videos/reel.mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/40 pointer-events-none"></div>
+                <div class="absolute bottom-4 right-4 text-white z-10">
+                    <a href="https://www.instagram.com/sambasurfshop" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-2xl drop-shadow-lg"></i></a>
+                </div>  
+            </div>
+
+            <div class="reel-item relative group aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                <video 
+                    class="lazy-reel w-full h-full object-cover cursor-pointer" 
+                    playsinline 
+                    muted 
+                    loop 
+                    preload="none"
+                    data-src="images/videos/reel1.mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/40 pointer-events-none"></div>
+                <div class="absolute bottom-4 right-4 text-white z-10">
+                    <a href="https://www.instagram.com/sambasurfshop" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-2xl drop-shadow-lg"></i></a>
+                </div>
+            </div>
+
+            <div class="reel-item relative group aspect-[9/16] rounded-3xl overflow-hidden shadow-2xl bg-gray-100 transform transition-transform duration-300 hover:scale-[1.02]">
+                <video 
+                    class="lazy-reel w-full h-full object-cover cursor-pointer" 
+                    playsinline 
+                    muted 
+                    loop 
+                    preload="none"
+                    data-src="images/videos/reel2.mp4">
+                </video>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/40 pointer-events-none"></div>
+                <div class="absolute bottom-4 right-4 text-white z-10">
+                    <a href="https://www.instagram.com/sambasurfshop" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-2xl drop-shadow-lg"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const reelsSection = document.getElementById('reels-section');
+            const videoElements = document.querySelectorAll('.lazy-reel');
+            let hasLoaded = false;
+
+            // Helper function to create the correct Play/Pause icon
+            function updatePlayPauseIcon(button, state) {
+                if (state === 'pause') {
+                    // Pause Icon (two vertical bars)
+                    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor"><path d="M14 19V5h4v14h-4zm-8 0V5h4v14H6z"/></svg>';
+                } else {
+                    // Play Icon (triangle)
+                    button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+                }
+            }
+
+            // Helper function to toggle video state
+            function togglePlayPause(video, button) {
+                if (video.paused || video.ended) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+                // The video 'play'/'pause' events will call updatePlayPauseIcon automatically
+            }
+
+            // --- 1. Intersection Observer: Only load videos when user scrolls near the section ---
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !hasLoaded) {
+                        loadVideos();
+                        observer.unobserve(reelsSection); // Stop watching once loaded
+                    }
+                });
+            }, { rootMargin: '200px', threshold: 0.1 }); 
+
+            observer.observe(reelsSection);
+
+            function loadVideos() {
+                hasLoaded = true;
+                videoElements.forEach((video, index) => {
+                    const container = video.parentElement;
+                    const controls = container.querySelector('.video-controls');
+                    const playPauseBtn = container.querySelector('.play-pause-btn');
+                    const fullscreenBtn = container.querySelector('.fullscreen-btn');
+
+                    // Swap data-src to src to start download
+                    if(video.dataset.src) {
+                        video.src = video.dataset.src;
+                        video.load(); // Trigger load
+                    }
+
+                    // --- Auto-play the first video (on load) ---
+                    if (index === 0) {
+                        video.play().catch(error => {
+                            // Auto-play prevented - ignore and wait for user interaction
+                            console.log("Auto-play prevented on video 1.");
+                        });
+                    }
+
+                    // --- 2. Event Listeners for Custom Controls ---
+
+                    // A. Click anywhere on the video container
+                    container.addEventListener('click', (e) => {
+                        // Toggle controls visibility
+                        controls.classList.toggle('opacity-0');
+                        controls.classList.toggle('pointer-events-none'); 
+
+                        // Auto-hide controls after a delay (3 seconds)
+                        clearTimeout(container.dataset.hideTimeout);
+                        if (!controls.classList.contains('opacity-0')) {
+                            container.dataset.hideTimeout = setTimeout(() => {
+                                controls.classList.add('opacity-0', 'pointer-events-none');
+                            }, 3000);
+                        }
+                    });
+
+                    // B. Play/Pause Button Click (Stops click event from propagating to container click)
+                    playPauseBtn.addEventListener('click', (e) => {
+                        e.stopPropagation(); 
+                        togglePlayPause(video, playPauseBtn);
+                    });
+
+                    // C. Fullscreen Button Click
+                    fullscreenBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        if (video.requestFullscreen) {
+                            video.requestFullscreen();
+                        } else if (video.webkitRequestFullscreen) { /* Safari */
+                            video.webkitRequestFullscreen();
+                        } else if (video.msRequestFullscreen) { /* IE11 */
+                            video.msRequestFullscreen();
+                        }
+                    });
+
+                    // D. Video Click (for play/pause when controls are hidden)
+                    video.addEventListener('click', (e) => {
+                         // This is primarily for mobile taps, as the container click handles controls toggle
+                         e.stopPropagation(); // Stop propagation to container
+                         togglePlayPause(video, playPauseBtn);
+                    });
+                    
+                    // --- 3. Update Button Icon on Video State Change ---
+                    video.addEventListener('play', () => {
+                        updatePlayPauseIcon(playPauseBtn, 'pause');
+                    });
+                    video.addEventListener('pause', () => {
+                        updatePlayPauseIcon(playPauseBtn, 'play');
+                    });
+                    // Initial update for the first video if it auto-plays
+                    if (index === 0 && !video.paused) {
+                        updatePlayPauseIcon(playPauseBtn, 'pause');
+                    } else {
+                        updatePlayPauseIcon(playPauseBtn, 'play');
+                    }
+                });
+            }
+        });
+    </script>
+</section>
 
                 <section id="gallery" class="py-20 mb-4">
         <div class="container mx-auto px-4">

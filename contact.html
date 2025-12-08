@@ -641,14 +641,14 @@
                                     <input type="checkbox" id="extra-food" name="extra-food" class="w-5 h-5 text-primary-600 rounded focus:ring-primary-600 border-gray-300">
                                     <div>
                                         <span class="font-medium block text-slate-800">Food & Drink</span>
-                                        <span class="text-xs text-slate-500">Lunch & Beverages (80 MAD / pp / session)</span>
+                                        <span class="text-xs text-slate-500">Lunch & Beverages (80 € / pp / session)</span>
                                     </div>
                                 </label>
                                 <label class="flex items-center gap-3 p-3 rounded-lg border cursor-pointer transition-all flex-1 border-slate-200 hover:border-primary-300 has-[:checked]:border-primary-500 has-[:checked]:bg-primary-100">
                                     <input type="checkbox" id="extra-photo" name="extra-photo" class="w-5 h-5 text-primary-600 rounded focus:ring-primary-600 border-gray-300">
                                     <div>
                                         <span class="font-medium block text-slate-800">Photo Package</span>
-                                        <span class="text-xs text-slate-500">Professional shots (200 MAD / session)</span>
+                                        <span class="text-xs text-slate-500">Professional shots (200 € / session)</span>
                                     </div>
                                 </label>
                             </div>
@@ -669,7 +669,7 @@
                                 <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-4">
                                     <p class="text-primary-400 text-xs font-bold uppercase tracking-wider">Estimated Total</p>
                                     <div class="flex items-baseline gap-2">
-                                        <span id="total-price" class="text-2xl font-bold text-white">0 MAD</span>
+                                        <span id="total-price" class="text-2xl font-bold text-white">0 €</span>
                                     </div>
                                 </div>
                             </div>
@@ -797,7 +797,7 @@
                             <th class="px-2 py-3 text-left">Service Description</th>
                             <th class="px-2 py-3 text-center">People</th>
                             <th class="px-2 py-3 text-center">Qty</th>
-                            <th class="px-2 py-3 text-right">Amount (MAD)</th>
+                            <th class="px-2 py-3 text-right">Amount (€)</th>
                         </tr>
                     </thead>
                     <tbody id="invoice-body" class="divide-y divide-slate-100">
@@ -807,7 +807,7 @@
 
                 <div class="pt-4 mt-6 border-t border-slate-100 flex items-center justify-between">
                     <span class="text-slate-500 font-medium">Grand Total</span>
-                    <span id="invoice-grand-total" class="text-3xl font-bold text-primary-600">0 MAD</span>
+                    <span id="invoice-grand-total" class="text-3xl font-bold text-primary-600">0 €</span>
                 </div>
 
                 <div class="mt-6 bg-primary-50 text-primary-800 text-xs p-3 rounded-lg border border-primary-200">
@@ -851,9 +851,9 @@
 
             // --- Configuration ---
             const PRICING = {
-                courses: { "Open Group Session": 250, "Private Surf Coaching": 350, "Private Group Surf": 300 },
-                activities: { "Paradise Valley": 200, "Sand Dunes": 350, "Surf Skate": 150 },
-                extras: { food: 80, photo: 200 } // food: Per person per session; photo: Flat fee per session
+                courses: { "Open Group Session": 25, "Private Surf Coaching": 35, "Private Group Surf": 30 },
+                activities: { "Paradise Valley": 30, "Sand Dunes": 25, "Surf Skate": 20 },
+                extras: { food: 8, photo: 20 } // food: Per person per session; photo: Flat fee per session
             };
 
             // --- DOM Elements ---
@@ -980,7 +980,7 @@
                 const extraPhoto = extraPhotoInput.checked;
 
                 if (!serviceName) {
-                    totalPriceDisplay.textContent = '0 MAD';
+                    totalPriceDisplay.textContent = '0 €';
                     return { grandTotal: 0, serviceName: '', people, sessions };
                 }
 
@@ -1004,7 +1004,7 @@
                 const grandTotal = serviceTotal + foodTotal + photoTotal;
 
                 // Update UI
-                totalPriceDisplay.textContent = `${grandTotal.toLocaleString()} MAD`;
+                totalPriceDisplay.textContent = `${grandTotal.toLocaleString()} €`;
                 
                 return { serviceTotal, foodTotal, photoTotal, grandTotal, serviceName, basePrice, people, sessions, extraFood, extraPhoto };
             }
@@ -1036,7 +1036,7 @@
                 if (data.extraFood) {
                     rows.push(`
                         <tr class="text-slate-600 text-sm">
-                            <td class="px-2 py-2 text-left">Food & Drink (${PRICING.extras.food} MAD / pp)</td>
+                            <td class="px-2 py-2 text-left">Food & Drink (${PRICING.extras.food} € / pp)</td>
                             <td class="px-2 py-2 text-center">${data.people}</td>
                             <td class="px-2 py-2 text-center">${data.sessions}</td>
                             <td class="px-2 py-2 text-right">${data.foodTotal.toLocaleString()}</td>
@@ -1048,7 +1048,7 @@
                 if (data.extraPhoto) {
                     rows.push(`
                         <tr class="text-slate-600 text-sm">
-                            <td class="px-2 py-2 text-left">Photo Package (${PRICING.extras.photo} MAD flat fee)</td>
+                            <td class="px-2 py-2 text-left">Photo Package (${PRICING.extras.photo} € flat fee)</td>
                             <td class="px-2 py-2 text-center">1</td>
                             <td class="px-2 py-2 text-center">${data.sessions}</td>
                             <td class="px-2 py-2 text-right">${data.photoTotal.toLocaleString()}</td>
@@ -1057,7 +1057,7 @@
                 }
 
                 invoiceBody.innerHTML = rows.join('');
-                invoiceGrandTotal.textContent = `${data.grandTotal.toLocaleString()} MAD`;
+                invoiceGrandTotal.textContent = `${data.grandTotal.toLocaleString()} €`;
             }
 
             // Add event listeners to trigger calculation on input change
@@ -1192,7 +1192,7 @@ Sessions: ${data.sessions}
 Date: ${date}
 Time: ${time}
 Extras: ${extrasText}
-Total price : ${data.grandTotal} MAD
+Total price : ${data.grandTotal} €
 --------------------`;
 
                 const encodedMessage = encodeURIComponent(message);
