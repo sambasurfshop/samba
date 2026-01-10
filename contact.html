@@ -1356,7 +1356,7 @@ Total price : ${data.grandTotal} €
                 const whatsappUrl = `https://wa.me/212689885266?text=${encodedMessage}`;
 
                 // Redirect
-                window.open(whatsappUrl, '_blank');
+                window.location.href = whatsappUrl;
             });
 
             // 2. General Form Submission
@@ -1388,7 +1388,7 @@ ${userMessage}
                 const encodedMessage = encodeURIComponent(message);
                 const whatsappUrl = `https://wa.me/212689885266?text=${encodedMessage}`;
 
-                window.open(whatsappUrl, '_blank');
+                window.location.href = whatsappUrl;
             });
 
 
