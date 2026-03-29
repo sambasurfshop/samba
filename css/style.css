@@ -3530,7 +3530,6 @@ body {
       background-color: #f0f5d5; /* Added a light page background */
       scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    overscroll-behavior-y: none;
 
     }
   @media (max-width: 767px) {
